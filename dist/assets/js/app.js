@@ -1771,9 +1771,9 @@ $(function () {
         }
     }
     if (document.querySelector('[data-isnumber-999]')) {
-        const dataNumber = document.querySelectorAll('[data-isnumber-999]');
-        for (let i = 0; i < dataNumber.length; i++) {
-            IMask(dataNumber[i], {
+        const dataNumber999 = document.querySelectorAll('[data-isnumber-999]');
+        for (let i = 0; i < dataNumber999.length; i++) {
+            IMask(dataNumber999[i], {
                 mask: Number,
                 min: 1,
                 max: 999

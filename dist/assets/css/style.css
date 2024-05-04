@@ -4000,8 +4000,6 @@ body[class*=jconfirm-no-scroll-] {
         -webkit-box-align: start;
         -ms-flex-align: start;
         align-items: flex-start;
-        -webkit-transition: all .000001s ease-in-out;
-        transition: all .000001s ease-in-out;
         height: 40px;
     }
 

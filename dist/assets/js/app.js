@@ -1715,6 +1715,14 @@ $(function () {
     } else {
         $('.ticker__list').marquee({ direction: 'horizontal', delay: 0, timing: 40 });
     }
+    // $(window).on("resize", debounce(function(){
+    //     const mediaQuery = window.matchMedia('(max-width: 1024px)');
+    //     if (mediaQuery.matches) {
+    //         $('.ticker__list').marquee();
+    //     } else {
+    //         $('.ticker__list').marquee({ direction: 'horizontal', delay: 0, timing: 40 });
+    //     }
+    // }));
 
 
     //Copy text

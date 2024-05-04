@@ -1069,6 +1069,10 @@
     .jconfirm-bg {
       background: rgba(18, 22, 32, 0.3);
     }
+
+    .btn--grayline{
+      color: #fefefe;
+    }
   
     .jconfirm-box {
       background: #121620;
@@ -1083,6 +1087,9 @@
       div.jconfirm-title-c {  
         .jconfirm-icon-c{
           border: 1px solid #485566;
+          .ic-info, .ic-delete{
+            fill: #485566;
+          }
         }
   
       }

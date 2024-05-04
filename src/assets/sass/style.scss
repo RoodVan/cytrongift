@@ -29,10 +29,6 @@
         display: flex;
         align-items: center;
         height: 100%;
-        //animation: ticker 25s linear infinite;
-        &:hover{
-           // animation-play-state: paused;
-        }
     }
     &__item{
         display: flex;
@@ -924,7 +920,7 @@ main{
 }
 
 .rwb{
-    background-color: var(--gray0-main);
+    background-color: var(--main-gray0);
     padding: 100px 0;
     &__title{
         text-align: center;
@@ -1095,6 +1091,7 @@ main{
             width: 12px;
             height: 12px;
             flex: 0 0 12px;
+            max-width: 12px;
             border: none;
             background: var(--dote-color);
             border-radius: 50%;

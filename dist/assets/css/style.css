@@ -5165,7 +5165,7 @@ main {
 }
 
 .rwb {
-    background-color: var(--gray0-main);
+    background-color: var(--main-gray0);
     padding: 100px 0;
 }
 
@@ -5433,6 +5433,7 @@ main {
     -webkit-box-flex: 0;
     -ms-flex: 0 0 12px;
     flex: 0 0 12px;
+    max-width: 12px;
     border: none;
     background: var(--dote-color);
     border-radius: 50%;

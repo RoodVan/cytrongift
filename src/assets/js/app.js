@@ -100,6 +100,14 @@ $(function () {
         }
     });
 
+    $(".js-inp-calc").on("keyup", function(){
+        let cf_1 = 95;
+        let cf_2 = 0.000015;
+
+        $("#cf_1").html( `${parseFloat($(this).val() * cf_1)}` );
+        $("#cf_2").html( `${parseFloat($(this).val() * cf_2)}` );
+    });
+
 
     // Inputs mask
     if (document.querySelector('[data-isnumber]')) {
@@ -107,6 +115,16 @@ $(function () {
         for (let i = 0; i < dataNumber.length; i++) {
             IMask(dataNumber[i], {
                 mask: Number
+            });
+        }
+    }
+    if (document.querySelector('[data-isnumber-999]')) {
+        const dataNumber = document.querySelectorAll('[data-isnumber-999]');
+        for (let i = 0; i < dataNumber.length; i++) {
+            IMask(dataNumber[i], {
+                mask: Number,
+                min: 1,
+                max: 999
             });
         }
     }

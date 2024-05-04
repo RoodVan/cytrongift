@@ -1,0 +1,406 @@
+---
+layout: default
+title: Blog Inner
+---
+
+{{> ticker }}
+
+<div class="wrapper">
+    <header>    
+        <div class="header__top container">
+            <div class="header__logo _light">
+                <a href="#">
+                    <img src="./assets/img/logo-light.svg" alt="logo">
+                </a>
+            </div>
+
+            <div class="header__logo _dark">
+                <a href="#">
+                    <img src="./assets/img/logo-dark.svg" alt="logo">
+                </a>
+            </div>
+
+            <div class="menu-side">
+                <div class="menu-side__head">
+                    <div class="header__logo _light">
+                        <a href="#">
+                            <img src="./assets/img/logo-light.svg" alt="logo">
+                        </a>
+                    </div>
+                    <div class="header__logo _dark">
+                        <a href="#">
+                            <img src="./assets/img/logo-dark.svg" alt="logo">
+                        </a>
+                    </div>
+                    <button class="xclose js-menu-close">&nbsp;</button>
+                </div>
+
+                <nav class="menu">
+                    <ul class="menu__list">
+                        <li class="menu__item">
+                            <a href="#" class="menu__link menu__link--active">Home</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">About</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">Calculator</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">Blog</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">FAQ</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">Support</a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <div class="header__props">
+
+                    <div class="toggle-theme">
+                        <input type="checkbox" class="dn" id="t-theme"/>
+                        <label for="t-theme" class="toggle-theme__lab">
+                            <span class="toggle-theme__handler"></span>
+                        </label>
+                    </div>
+                    
+                    <div class="usbox">
+                        <div class="usbox__form">
+                            <button class="btn btn--ltblue _md" onclick="popup.open('#popup__login');">Log in</button>
+                            <button class="btn btn--blue _md" onclick="popup.open('#popup__sign-up');">Sign up</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mobile-only">
+                <div class="toggle-theme">
+                    <input type="checkbox" id="mdn"/>
+                    <label for="mdn" class="toggle-theme__lab">
+                        <span class="toggle-theme__handler"></span>
+                    </label>
+                </div>
+
+                <div class="hamburger">
+                    <svg>
+                        <use xlink:href="#ic-hamburger"></use>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="b-heading">
+            <div class="b-heading__body container">
+                <div class="breadcrumbs">
+                    <a href="#">
+                        <svg>
+                            <use xlink:href="#ic-home"></use>
+                        </svg>
+                        Home
+                    </a>
+                    <span>/</span>
+                    <a href="#">Blog</a>
+                    <span>/</span>
+                    <a href="#">General</a>
+                    <span>/</span>
+                    <a href="#">Why Cytrongift Is Better Than Cytrongift</a>
+                </div>
+
+                <h1>Why Cytrongift Is Better Than Cytrongift</h1>
+            </div>
+        </div>
+
+        <div class="container scontent">
+            <aside class="aside">               
+                <nav class="smenu">
+                    <h3>Categories</h3>
+                    <ul class="smenu__list">
+                        <li class="smenu__item">
+                            <a href="#" class="smenu__link smenu__link--active">All posts</a>
+                        </li>
+                        <li class="smenu__item">
+                            <a href="#" class="smenu__link">General</a>
+                        </li>
+                        <li class="smenu__item">
+                            <a href="#" class="smenu__link">Gift Card</a>
+                        </li>
+                        <li class="smenu__item">
+                            <a href="#" class="smenu__link">Gift Card Errors</a>
+                        </li>
+                        <li class="smenu__item">
+                            <a href="#" class="smenu__link">News & Updates</a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <nav class="smenu _links">
+                    <h3>Recent Posts</h3>
+                    <ul class="smenu__list">
+                        <li class="smenu__item">
+                            <a href="#" class="smenu__link">How to Redeem Nike Gift Cards for Bitcoin Online</a>
+                        </li>
+                        <li class="smenu__item">
+                            <a href="#" class="smenu__link">10 Gift Cards You Can Get At Costco</a>
+                        </li>
+                        <li class="smenu__item">
+                            <a href="#" class="smenu__link">How to Fix Walmart Gift Card Errors</a>
+                        </li>
+                        <li class="smenu__item">
+                            <a href="#" class="smenu__link">How to Fix PSN Gift Card Errors</a>
+                        </li>
+                        <li class="smenu__item">
+                            <a href="#" class="smenu__link">Update: Added Nintendo Gift Cards</a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <div class="bob">
+                    <a href="#" class="ps-link">&nbsp;</a>
+                    <img src="./assets/img/logo-dark.svg" class="bob__logo" alt="logo">
+                    <div class="bob__title">
+                        Sell with <br/><strong>Cytrongift</strong>
+                    </div>
+                    <ul class="bob__list">
+                        <li>
+                            <svg>
+                                <use xlink:href="#ic-star1"></use>
+                            </svg>
+                            <span>Best Rates on market</span>
+                        </li>
+                        <li>
+                            <svg>
+                                <use xlink:href="#ic-star1"></use>
+                            </svg>
+                            <span>More than 30 card types</span>
+                        </li>
+                        <li>
+                            <svg>
+                                <use xlink:href="#ic-star1"></use>
+                            </svg>
+                            <span>Completely confidential</span>
+                        </li>
+                    </ul>
+                    <a href="#" class="btn btn--blue _md">Sell Now</a>
+                </div>
+            </aside>
+
+            <div class="article sstext pl30">
+
+                <img src="./assets/img/content/blog-img.jpg" alt="" class="img-main">
+
+                <p>Gift cards are increasingly being used for personal benefits and traded in Nigeria and Africa as a whole, which explains its high demand. </p>
+
+                <p>This has generated a thriving business in the finance world where platforms have been developed to ease the burden of gift card redemption. Many apps have taken the responsibility of helping people to <a href="https://prestmit.com/" target="_blank">redeem their gift cards for cash and crypto</a>. Some of these platforms are the Cytrongift app and the Glover app.</p>
+               
+               <p>If you are a new gift card owner looking to sell your gift cards and are unsure or skeptical of which platform to use between one of the two most outstanding <a href="https://prestmit.com/blog/top-5-best-gift-card-trading-apps-in-nigeria-in-2022/" target="_blank">gift card trading apps</a> in Africa; Cytrongift and Glover, then this article will give you the insight you desire.</p>
+               
+               <h3 class="mt-30">About Cytrongift Mobile Gift Card Trading App</h3>
+
+               <p>Mobile applications provide the most convenient channel for making transactions repeatedly, online. Cytrongift, one of Nigeria’s senior, consistent, and reliable gift card exchange platforms, has launched a mobile application that will make selling gift cards online even easier. <a href="https://play.google.com/store/apps/details?id=com.prestmit&hl=en_US&gl=US" target="_blank">Cytrongift mobile app is very much available on the google play store.</a></p>
+               
+               <p>On Cytrongift, the gift card rates are automatically updated to stay correct and current according to market rates. The aim of Cytrongift is not limited to just making a profit, but also to ensure that every user is blessed with an amazing experience while using the platform.</p>
+               
+               <p>You can sell all <a href="https://prestmit.com/blog/sell-all-types-of-gift-cards-in-nigeria-and-ghana/" target="_blank">types of gift cards</a> in Nigeria and Ghana, for cedis or mobile money, for bitcoins, or USDT, anytime, anywhere, on Cytrongift. Thus, whatever gift cards you want to trade, whether Amazon, Google Play, iTunes, Steam, Sephora, and so on, you can do so easily on Cytrongift because the platform has a large selection of gift cards exchanges.</p>
+               
+               <h3 class="mt-30">About Cytrongift Mobile Gift Card Trading App</h3>
+
+               <p>Glover is an affiliate company of <a href="https://mypatricia.co/" target="_blank">Patricia</a>. Glover is an exchange platform that aims to open up a world of financial opportunities to everyone. The company is a proponent of seeking new ways of making money by promoting exchange through the use of gift cards.</p>
+               
+               <p>Patricia’s gift card and digital asset services were handed over to Glover a few months ago. This means you can no longer trade your gift cards on Patricia, but only on Glover. The Glover app allows you to pay your utility bills and top up your phone’s airtime from the comfort of your own home, easily purchasing local and international gift cards. This app also has room for you to buy and sell your favorite gift cards and convert your airtime into money</p>
+               
+               <div class="article__props">
+                    <span class="d">
+                        <svg>
+                            <use xlink:href="#ic-time"></use>
+                        </svg>
+                        March 25, 2024
+                    </span>
+                    <span class="s">/</span>
+                    <a href="#">General</a>
+               </div>
+
+               <div class="blog-box">
+                <h2>Similar Articles</h2>
+                <div class="blog-list">
+                        <div class="blog-col">
+                            <div class="blog-item">
+                                <div class="blog-item__img">
+                                    <a href="#">
+                                        <img src="./assets/img/content/blog-4.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="blog-item__title">
+                                    <a href="#">Hotbit Review: Reasons For Hotbit CEX Operations Shutdown </a>
+                                </div>
+                                <div class="blog-item__foot">
+                                    <a href="#" class="blog-item__bx">Gift Card Errors</a>
+                                    <span class="blog-item__date">March 25, 2024</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="blog-col">
+                            <div class="blog-item">
+                                <div class="blog-item__img">
+                                    <a href="#">
+                                        <img src="./assets/img/content/blog-5.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="blog-item__title">
+                                    <a href="#">How Web3 Resolves Critical Problems In Web2</a>
+                                </div>
+                                <div class="blog-item__foot">
+                                    <a href="#" class="blog-item__bx">Gift Card Errors</a>
+                                    <span class="blog-item__date">March 25, 2024</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="blog-col">
+                            <div class="blog-item">
+                                <div class="blog-item__img">
+                                    <a href="#">
+                                        <img src="./assets/img/content/blog-6.jpg" alt="">
+                                    </a>
+                                </div>
+                                <div class="blog-item__title">
+                                    <a href="#">How to Sell Gift card safe with Cytrongift</a>
+                                </div>
+                                <div class="blog-item__foot">
+                                    <a href="#" class="blog-item__bx">Gift Card Errors</a>
+                                    <span class="blog-item__date">March 25, 2024</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__body container">
+
+            <div class="footer__top">
+                <div class="footer__info">
+                    <a href="#" class="footer__logo">
+                        <img src="./assets/img/logo-dark.svg" alt="logo">
+                    </a>
+                    <div class="footer__txt">
+                        Cytrongift is a platform focused on users that allows them to exchange their unused gift cards and vouchers for Bitcoin, Litecoin, Dogecoin, USDT, or fiat currencies like USD and EUR.
+                    </div>
+                </div>
+
+                <div class="footer__nav">
+                    <ul class="fmenu">
+                        <li class="h4 fmenu__cap">Use</li>
+                        <li class="fmenu__link">
+                            <a href="#">Sell Gift Card</a>
+                        </li>
+                        <li class="fmenu__link">
+                            <a href="#">Rates Calculator</a>
+                        </li>
+                        <li class="fmenu__link">
+                            <a href="#">My Account</a>
+                        </li>
+                    </ul>
+                    <ul class="fmenu">
+                        <li class="h4 fmenu__cap">Resources</li>
+                        <li class="fmenu__link">
+                            <a href="#">About us</a>
+                        </li>
+                        <li class="fmenu__link">
+                            <a href="#">Reviews</a>
+                        </li>
+                        <li class="fmenu__link">
+                            <a href="#">Blog & News</a>
+                        </li>
+                        <li class="fmenu__link">
+                            <a href="#">FAQ</a>
+                        </li>
+                        <li class="fmenu__link">
+                            <a href="#">Support</a>
+                        </li>
+                    </ul>
+                    <ul class="fmenu">
+                        <li class="h4 fmenu__cap">Legal</li>
+                        <li class="fmenu__link">
+                            <a href="#">Terms of Use</a>
+                        </li>
+                        <li class="fmenu__link">
+                            <a href="#">Privacy Policy</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer__langs">
+                    <div class="langs">
+                        <div class="langs__caption" data-dropdown="caption">
+                            <img src="./assets/img/flags/en.svg" alt="en">
+                            <span>English</span>
+                            <svg>
+                                <use xlink:href="#ic-sort"></use>
+                            </svg>
+                        </div>
+                        <div class="langs__list" data-dropdown="list">
+                            <a href="#" class="langs__item" data-dropdown="item">
+                                <img src="./assets/img/flags/ru.svg" alt="ru">
+                                <span>Русский</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer__cr">
+                <div class="copy-right">
+                    &copy; 2024 cytrongift.com<br/>Powered by <a href="https://perfecto-web.com/" target="_blank">Perfecto Web</a>
+                </div>
+
+                <ul class="fsocs">
+                    <li class="fsocs__item">
+                        <a href="#">
+                            <svg>
+                                <use xlink:href="#ic-soc-fb"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="fsocs__item">
+                        <a href="#">
+                            <svg>
+                                <use xlink:href="#ic-soc-tw"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="fsocs__item">
+                        <a href="#">
+                            <svg>
+                                <use xlink:href="#ic-soc-ig"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="fsocs__item">
+                        <a href="#">
+                            <svg>
+                                <use xlink:href="#ic-soc-yb"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </footer>
+</div>
+
+
+<!-- POPUPS BEGIN -->
+{{> popups_register }}
+<!-- POPUPS END -->

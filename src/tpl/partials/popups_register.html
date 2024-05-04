@@ -1,0 +1,141 @@
+
+<!-- Popup Sign Up -->
+<div class="popup" id="popup__sign-up">
+    <div class="popup__container popup__sign-up">
+
+        <div class="popup__body">
+            <button type="button" class="btn popup__close" onclick="popup.close('#popup__sign-up');">
+                <svg>
+                    <use xlink:href="#ic-close"></use>
+                </svg>
+            </button>
+
+            <div class="popup__head">
+                <div class="popup__icon">
+                    <svg>
+                        <use xlink:href="#ic-rock"></use>
+                    </svg>
+                </div>
+                <div class="popup__title">Sign up</div>
+                <div class="popup__subtitle">Create your account for free</div>
+            </div>
+
+            <div class="popup__form">
+                <div class="popup__form-g">
+                    <label class="popup__form-l">Username*</label>
+                    <input type="text" class="inp inp--brd _md" placeholder="Enter your name">
+                </div>
+                <div class="popup__form-g">
+                    <label class="popup__form-l">Email*</label>
+                    <input type="email" class="inp inp--brd _md" placeholder="Enter your email">
+                </div>
+                <div class="popup__form-g">
+                    <label class="popup__form-l">Password*</label>
+                    <div class="pp-e">
+                        <span class="sw-eye">
+                            <svg><use xlink:href="#ic-eye-0"></use></svg>
+                        </span>
+                        <input type="password" class="inp inp--brd _md" placeholder="Set up your password">
+                    </div>
+                </div>
+                <div class="popup__form-g">
+                    <label class="checkbox">
+                        <input type="checkbox" class="checkbox__inp">
+                        <span class="checkbox__frame"></span>
+                        <span class="checkbox__label">I’ve read and agree to the Cytrongift Terms of Use and Privacy Policy</span>
+                    </label>
+                </div>
+
+                <div class="popup__form-btns">
+                    <button class="btn btn--green _md w-100" onclick="exampleLoading('.popup__sign-up');">Create Account</button>
+                    <div class="popup__fti">
+                        Already registered? <a href="javascript:popup.open('#popup__login');">Log In</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!-- Popup Log In -->
+<div class="popup" id="popup__login">
+    <div class="popup__container popup__login">
+
+        <div class="popup__body">
+            <button type="button" class="btn popup__close" onclick="popup.close('#popup__login');">
+                <svg>
+                    <use xlink:href="#ic-close"></use>
+                </svg>
+            </button>
+
+            <div class="popup__head">
+                <div class="popup__icon">
+                    <svg>
+                        <use xlink:href="#ic-user"></use>
+                    </svg>
+                </div>
+                <div class="popup__title">Log in</div>
+                <div class="popup__subtitle">Please enter your details.</div>
+            </div>
+
+            <div class="popup__form">
+                <div class="popup__form-g">
+                    <label class="popup__form-l">Email</label>
+                    <input type="email" class="inp inp--brd _md" placeholder="Enter your email">
+                </div>
+                <div class="popup__form-g">
+                    <label class="popup__form-l">Password</label>
+                    <input type="password" class="inp inp--brd _md" placeholder="Enter your password">
+                </div>
+                <div class="popup__form-g text-right">
+                    <a href="javascript:popup.open('#popup__forgot');">Forgot password?</a>
+                </div>
+
+                <div class="popup__form-btns">
+                    <button class="btn btn--blue _md w-100" onclick="exampleLoading('.popup__login');">Sign in</button>
+                    <div class="popup__fti">
+                        New on Cytrongift? <a href="javascript:popup.open('#popup__sign-up');">Sign Up</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!-- Popup Forgot Password -->
+<div class="popup" id="popup__forgot">
+    <div class="popup__container popup__forgot">
+
+        <div class="popup__body">
+            <button type="button" class="btn popup__close" onclick="popup.close('#popup__forgot');">
+                <svg>
+                    <use xlink:href="#ic-close"></use>
+                </svg>
+            </button>
+
+            <div class="popup__head">
+                <div class="popup__icon">
+                    <svg>
+                        <use xlink:href="#ic-locked"></use>
+                    </svg>
+                </div>
+                <div class="popup__title">Forgot Password?</div>
+                <div class="popup__subtitle">Enter your email & follow the instructions.</div>
+            </div>
+
+            <div class="popup__form">
+                <div class="popup__form-g">
+                    <label class="popup__form-l">Email</label>
+                    <input type="email" class="inp inp--brd _md" placeholder="Enter your email">
+                </div>
+
+                <div class="popup__form-btns">
+                    <button class="btn btn--blue _md w-100" onclick="exampleLoading('.popup__forgot');">Send instructions</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>

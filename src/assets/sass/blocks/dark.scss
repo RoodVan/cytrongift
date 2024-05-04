@@ -1,0 +1,110 @@
+.theme-dark{
+    .t-heading{
+        background: #121620;
+    }
+    .scontent{
+        color: #6C7A8B;
+        h1,h2,h3,h3,h5{
+            color: #FEFEFE;
+        }
+    }
+
+    .smenu{
+        &__link{
+            color: #A2B4CB;
+            &--active{
+                color: #485566;
+            }
+            &:hover{
+                color: #60A5FA;
+            }
+        }
+    }
+
+    .blog{
+        &-item{
+            &__title{
+                a{
+                    color:#FEFEFE;
+                    &:hover{
+                        color: #60A5FA;
+                    }
+                }
+            }
+            &__bx{
+                color: #6C7A8B;
+                background: #262F3C;
+                &:hover{
+                    background: #60A5FA;
+                    color: #FEFEFE;
+                }
+            }
+            &__date{
+                color: #6C7A8B;
+            }
+        }
+    }
+
+    .pagination{
+        &__link{
+            color: #FEFEFE;
+            background: #262F3C;
+            &:hover{
+                color: #A2B4CB;
+            }
+            &--arrow{
+                svg{
+                    fill: #485566;
+                }
+                &:hover{
+                    svg{
+                        fill: #A2B4CB;
+                    }
+                }
+            }
+            &--active{
+                background: #3B82F6;
+                box-shadow: 0px 10px 15px #121720;
+                color: #F2F4FB;
+            }
+        }
+    }
+    .bob{
+        &:after{
+            background: url(../img/decor-0.svg) no-repeat 0 0 / contain;
+        }
+    }
+
+    .b-heading{
+        background: #121620;
+    }
+
+    .breadcrumbs{
+        color: #485566;
+        svg{
+            fill: #485566;
+        }
+        a{
+            color: #485566;
+            &:hover{
+                color: #60A5FA;
+                svg{
+                    fill: #60A5FA;
+                }
+            }
+        }
+    }
+
+    .spt-bx{
+        .fsocs{
+            ._fb,._tw,._ig,._yb{
+                fill: #F2F4FB;
+            }
+            a:hover{
+                ._fb,._tw,._ig,._yb{
+                    fill: #FEFEFE;
+                }
+            }
+        }
+    }
+}

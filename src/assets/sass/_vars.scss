@@ -1,0 +1,68 @@
+$font: "Nunito Sans", sans-serif;
+$bg_color: #fff;
+$text_color: #121620;
+
+.theme-light,
+:root{
+    --main-bg-color: #FEFEFE;
+    --main-text-color: #121620;
+    --gray-1: #A2B4CB;
+    --gray-2_1: #6C7A8B;
+    --menu-bg-color: #FEFEFE;
+    --dbox-shadow: none;
+    --dbox-shadow-1: none;
+    --bgtext: #FFD741;
+    --txt-clr-1: #485566;
+    --border-color: #F2F4FB;
+    --blue-yellow: #3B82F6;
+    --gray0-main: #F2F4FB;
+    --gray1-main: #121620;
+    --gray0-main: #121620;
+    --main-gray0: #F2F4FB;
+    --gray-1_3: #A2B4CB;
+    --dote-color: #D7E1EF;
+    --gray0-gray4: #F2F4FB;
+    --blue1-blue4: #3B82F6;
+
+    .header__logo{
+        &._dark{
+            display: none;
+        }
+
+        &._light{
+            display: block;
+        }
+    }
+}
+
+.theme-dark{
+    --main-bg-color: #181F2A;
+    --main-text-color: #FEFEFE;
+    --gray-1: #485566;
+    --gray-2_1: #A2B4CB;
+    --menu-bg-color: #181F2A;
+    --dbox-shadow: inset 0px 30px 120px rgba(0, 0, 0, 0.25);
+    --dbox-shadow-1: inset 0px -30px 120px rgba(0, 0, 0, 0.25);
+    --bgtext: #3B82F6;
+    --txt-clr-1: #A2B4CB;
+    --border-color: #262F3C;
+    --blue-yellow: #FFD741;
+    --gray0-main: #121620;
+    --gray1-main: #A2B4CB;
+    --gray0-main: #F2F4FB;
+    --main-gray0: #121620;
+    --gray-1_3: #485566;
+    --dote-color: #262F3C;
+    --gray0-gray4: #364152;
+    --blue1-blue4: #60A5FA;
+
+    .header__logo{
+        &._dark{
+            display: block;
+        }
+
+        &._light{
+            display: none;
+        }
+    }
+}

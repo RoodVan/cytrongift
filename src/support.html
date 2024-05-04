@@ -1,0 +1,318 @@
+---
+layout: default
+title: Support
+---
+
+{{> ticker }}
+
+<div class="wrapper">
+    <header>    
+        <div class="header__top container">
+            <div class="header__logo _light">
+                <a href="#">
+                    <img src="./assets/img/logo-light.svg" alt="logo">
+                </a>
+            </div>
+
+            <div class="header__logo _dark">
+                <a href="#">
+                    <img src="./assets/img/logo-dark.svg" alt="logo">
+                </a>
+            </div>
+
+            <div class="menu-side">
+                <div class="menu-side__head">
+                    <div class="header__logo _light">
+                        <a href="#">
+                            <img src="./assets/img/logo-light.svg" alt="logo">
+                        </a>
+                    </div>
+                    <div class="header__logo _dark">
+                        <a href="#">
+                            <img src="./assets/img/logo-dark.svg" alt="logo">
+                        </a>
+                    </div>
+                    <button class="xclose js-menu-close">&nbsp;</button>
+                </div>
+
+                <nav class="menu">
+                    <ul class="menu__list">
+                        <li class="menu__item">
+                            <a href="#" class="menu__link menu__link--active">Home</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">About</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">Calculator</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">Blog</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">FAQ</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">Support</a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <div class="header__props">
+
+                    <div class="toggle-theme">
+                        <input type="checkbox" class="dn" id="t-theme"/>
+                        <label for="t-theme" class="toggle-theme__lab">
+                            <span class="toggle-theme__handler"></span>
+                        </label>
+                    </div>
+                    
+                    <div class="usbox">
+                        <div class="usbox__form">
+                            <button class="btn btn--ltblue _md" onclick="popup.open('#popup__login');">Log in</button>
+                            <button class="btn btn--blue _md" onclick="popup.open('#popup__sign-up');">Sign up</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mobile-only">
+                <div class="toggle-theme">
+                    <input type="checkbox" id="mdn"/>
+                    <label for="mdn" class="toggle-theme__lab">
+                        <span class="toggle-theme__handler"></span>
+                    </label>
+                </div>
+
+                <div class="hamburger">
+                    <svg>
+                        <use xlink:href="#ic-hamburger"></use>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="b-heading">
+            <div class="b-heading__body container">
+                <div class="breadcrumbs">
+                    <a href="#">
+                        <svg>
+                            <use xlink:href="#ic-home"></use>
+                        </svg>
+                        Home
+                    </a>
+                    <span>/</span>
+                    <a href="#">Support</a>
+                </div>
+
+                <h1>Support</h1>
+            </div>
+        </div>
+
+        <div class="sdflex container">
+            <div class="col-5">
+                <div class="spt-info">
+                    <h2>Having any problem?</h2>
+                    <p>Every guide is trained and excited to work with you, whether you need help with a password reset or you're looking for a questions about your sells. Before creating ticket to support, please try to find answer on our <a href="#">Frequently Asked Questions</a></p>
+                
+                    <div class="spt-bx">
+                        <h3>Contacts</h3>
+                        <ul class="spt-bx__list">
+                            <li>
+                                <span>Customer care</span>
+                                <a href="mailto:info@cytrongift.com">info@cytrongift.com</a>
+                            </li>
+                            <li>
+                                <span>Partnership & ads</span>
+                                <a href="mailto:admin@cytrongift.com">admin@cytrongift.com</a>
+                            </li>
+                            <li>
+                                <span>Call us</span>
+                                <a href="tel:44020304843777">+44 0203 04843777</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="spt-bx">
+                        <h3>We are online</h3>
+                        <ul class="fsocs">
+                            <li class="fsocs__item">
+                                <a href="#">
+                                    <svg class="_fb">
+                                        <use xlink:href="#ic-soc-fb"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="fsocs__item">
+                                <a href="#">
+                                    <svg class="_tw">
+                                        <use xlink:href="#ic-soc-tw"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="fsocs__item">
+                                <a href="#">
+                                    <svg class="_ig">
+                                        <use xlink:href="#ic-soc-ig"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="fsocs__item">
+                                <a href="#">
+                                    <svg class="_yb">
+                                        <use xlink:href="#ic-soc-yb"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-5">
+                <div class="fform spt-fform">
+                    <div class="fform__g">
+                        <label class="fform__label">Full name</label>
+                        <input type="text" class="inp _md" placeholder="Enter your full name">
+                    </div>
+                    <div class="fform__g">
+                        <label class="fform__label">Email</label>
+                        <input type="email" class="inp _md" placeholder="Enter your email">
+                    </div>
+                    <div class="fform__g">
+                        <label class="fform__label">Issue</label>
+                        <input type="text" class="inp _md" placeholder="Your request subject">
+                    </div>
+                    <div class="fform__g">
+                        <label class="fform__label">Message</label>
+                        <textarea class="inp textarea" placeholder="Hello there, give us more details here..."></textarea>
+                    </div>
+                    <div class="fform__btn">
+                        <button type="button" class="btn btn--blue _md _rs">Send</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__body container">
+
+            <div class="footer__top">
+                <div class="footer__info">
+                    <a href="#" class="footer__logo">
+                        <img src="./assets/img/logo-dark.svg" alt="logo">
+                    </a>
+                    <div class="footer__txt">
+                        Cytrongift is a platform focused on users that allows them to exchange their unused gift cards and vouchers for Bitcoin, Litecoin, Dogecoin, USDT, or fiat currencies like USD and EUR.
+                    </div>
+                </div>
+
+                <div class="footer__nav">
+                    <ul class="fmenu">
+                        <li class="h4 fmenu__cap">Use</li>
+                        <li class="fmenu__link">
+                            <a href="#">Sell Gift Card</a>
+                        </li>
+                        <li class="fmenu__link">
+                            <a href="#">Rates Calculator</a>
+                        </li>
+                        <li class="fmenu__link">
+                            <a href="#">My Account</a>
+                        </li>
+                    </ul>
+                    <ul class="fmenu">
+                        <li class="h4 fmenu__cap">Resources</li>
+                        <li class="fmenu__link">
+                            <a href="#">About us</a>
+                        </li>
+                        <li class="fmenu__link">
+                            <a href="#">Reviews</a>
+                        </li>
+                        <li class="fmenu__link">
+                            <a href="#">Blog & News</a>
+                        </li>
+                        <li class="fmenu__link">
+                            <a href="#">FAQ</a>
+                        </li>
+                        <li class="fmenu__link">
+                            <a href="#">Support</a>
+                        </li>
+                    </ul>
+                    <ul class="fmenu">
+                        <li class="h4 fmenu__cap">Legal</li>
+                        <li class="fmenu__link">
+                            <a href="#">Terms of Use</a>
+                        </li>
+                        <li class="fmenu__link">
+                            <a href="#">Privacy Policy</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer__langs">
+                    <div class="langs">
+                        <div class="langs__caption" data-dropdown="caption">
+                            <img src="./assets/img/flags/en.svg" alt="en">
+                            <span>English</span>
+                            <svg>
+                                <use xlink:href="#ic-sort"></use>
+                            </svg>
+                        </div>
+                        <div class="langs__list" data-dropdown="list">
+                            <a href="#" class="langs__item" data-dropdown="item">
+                                <img src="./assets/img/flags/ru.svg" alt="ru">
+                                <span>Русский</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer__cr">
+                <div class="copy-right">
+                    &copy; 2024 cytrongift.com<br/>Powered by <a href="https://perfecto-web.com/" target="_blank">Perfecto Web</a>
+                </div>
+
+                <ul class="fsocs">
+                    <li class="fsocs__item">
+                        <a href="#">
+                            <svg>
+                                <use xlink:href="#ic-soc-fb"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="fsocs__item">
+                        <a href="#">
+                            <svg>
+                                <use xlink:href="#ic-soc-tw"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="fsocs__item">
+                        <a href="#">
+                            <svg>
+                                <use xlink:href="#ic-soc-ig"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="fsocs__item">
+                        <a href="#">
+                            <svg>
+                                <use xlink:href="#ic-soc-yb"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </footer>
+</div>
+
+
+<!-- POPUPS BEGIN -->
+{{> popups_register }}
+<!-- POPUPS END -->

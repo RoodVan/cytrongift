@@ -1,0 +1,194 @@
+.exselect{
+    position: relative;
+    z-index: 1;
+    color: #121620;
+    &__btn{
+        background: #FEFEFE;
+        border-radius: 8px;
+        padding: 0px 14px;
+        position: relative;
+        display: flex;
+        align-items: center;
+        height: 48px;
+        cursor: pointer;
+    }
+    &__arrow{
+        width: 14px;
+        height: 14px;
+        fill: #121620;
+        margin-left: auto;
+        flex: 0 1 14px;
+        max-width: 14px;
+    }
+    &__caption{
+        display: flex;
+        align-items: center;
+        img{
+            width: 20px;
+            height: 20px;
+            margin-right: 10px;
+        }
+    }
+    &__dropdown{
+        display: none;
+        overflow: hidden;
+        position: absolute;
+        left: 0; right: 0;
+        top: 49px;
+        background: #FEFEFE;
+        box-shadow: 0px 10px 15px rgba(18, 22, 32, 0.1);
+        border-radius: 8px;
+    }
+    &__search{
+        padding: 10px 14px;
+        position: relative;
+        svg{
+            width: 12px;
+            height: 12px;
+            fill:#485566;
+            position: absolute;
+            top: 18px; right: 24px;
+        }
+        input{
+            width: 100%;
+            outline: none;
+            padding: 0px 10px;
+            height: 28px;
+            border: 1px solid #F2F4FB;
+            border-radius: 4px;
+            font-size: 14px;
+            padding-right: 30px;
+            &::placeholder{
+                color: #A2B4CB;
+            }
+        }
+    }
+    &__opt{
+        transition: all .2s ease-in-out;
+        min-height: 48px;
+        padding: 10px 14px;
+        cursor: pointer;
+        &:hover{
+            background: #F2F4FB;
+        }
+        &.selected{
+            background: #F2F4FB;
+        }
+        img{
+            width: 20px;
+            height: 20px;
+            margin-right: 10px;
+        }
+        &-val{
+            display: flex;
+            align-items: center;
+        }
+        &-sub{
+            color: #485566;
+        }
+    }
+    &__empty{
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 105px;
+        text-align: center;
+        font-size: 14px;
+        line-height: 20px;
+        color: #A2B4CB;
+        svg{
+            fill: #181F2A;
+            width: 20px;
+            height: 20px;
+        }
+    }
+    &__list{
+        max-height: 240px;
+        overflow-y: auto;
+        &::-webkit-scrollbar{
+            background: transparent;
+            border: none;
+            outline: none;
+            width: 3px;
+        }
+        &::-webkit-scrollbar-track {
+            background: transparent;
+            border: none;
+            outline: none;
+        }	
+        &::-webkit-scrollbar-thumb{
+            background: #7F7F7F;
+            border-radius: 100px;
+        }
+    }
+    &--open{
+        z-index: 3;
+        .exselect__dropdown{
+            display: block;
+        }
+    }
+
+    &--border{
+        .exselect{
+            &__btn{
+                border: 1px solid #A2B4CB;
+            }
+            &__dropdown{
+                border: 1px solid #A2B4CB;
+            }
+        }
+    }
+}
+
+.theme-dark{
+    .exselect--border{
+        .exselect{
+            &__btn{
+                background: transparent;
+                color: #FEFEFE;
+                border: 1px solid #485566;
+            }
+            &__arrow{
+                fill: #485566;
+            }
+            &__dropdown{
+                background: #262F3C;
+                border: 1px solid #F2F4FB;
+                color: #FEFEFE;
+            }
+            &__input{
+                background: transparent;
+                border: 1px solid #485566;
+                color: #FEFEFE;
+                &:focus{
+                    border: 1px solid #F2F4FB;
+                }
+            }
+            &__empty{
+                svg{
+                    fill: #FEFEFE;
+                }
+            }
+            &__opt{
+                &.selected, &:hover{
+                    background: #6C7A8B;
+                }
+                &-sub{
+                    color: #F2F4FB;
+                }
+            }
+        }
+
+        &.exselect--open{
+            .exselect{
+                &__btn{
+                    border: 1px solid #F2F4FB;
+                }
+                &__arrow{
+                    fill: #F2F4FB;
+                }
+            }
+        }
+    }
+}

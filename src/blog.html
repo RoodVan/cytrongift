@@ -1,0 +1,490 @@
+---
+layout: default
+title: Blog
+---
+
+{{> ticker }}
+
+<div class="wrapper">
+    <header>    
+        <div class="header__top container">
+            <div class="header__logo _light">
+                <a href="#">
+                    <img src="./assets/img/logo-light.svg" alt="logo">
+                </a>
+            </div>
+
+            <div class="header__logo _dark">
+                <a href="#">
+                    <img src="./assets/img/logo-dark.svg" alt="logo">
+                </a>
+            </div>
+
+            <div class="menu-side">
+                <div class="menu-side__head">
+                    <div class="header__logo _light">
+                        <a href="#">
+                            <img src="./assets/img/logo-light.svg" alt="logo">
+                        </a>
+                    </div>
+                    <div class="header__logo _dark">
+                        <a href="#">
+                            <img src="./assets/img/logo-dark.svg" alt="logo">
+                        </a>
+                    </div>
+                    <button class="xclose js-menu-close">&nbsp;</button>
+                </div>
+
+                <nav class="menu">
+                    <ul class="menu__list">
+                        <li class="menu__item">
+                            <a href="#" class="menu__link menu__link--active">Home</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">About</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">Calculator</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">Blog</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">FAQ</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">Support</a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <div class="header__props">
+
+                    <div class="toggle-theme">
+                        <input type="checkbox" class="dn" id="t-theme"/>
+                        <label for="t-theme" class="toggle-theme__lab">
+                            <span class="toggle-theme__handler"></span>
+                        </label>
+                    </div>
+                    
+                    <div class="usbox">
+                        <div class="usbox__form">
+                            <button class="btn btn--ltblue _md" onclick="popup.open('#popup__login');">Log in</button>
+                            <button class="btn btn--blue _md" onclick="popup.open('#popup__sign-up');">Sign up</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mobile-only">
+                <div class="toggle-theme">
+                    <input type="checkbox" id="mdn"/>
+                    <label for="mdn" class="toggle-theme__lab">
+                        <span class="toggle-theme__handler"></span>
+                    </label>
+                </div>
+
+                <div class="hamburger">
+                    <svg>
+                        <use xlink:href="#ic-hamburger"></use>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="b-heading">
+            <div class="b-heading__body container">
+                <div class="breadcrumbs">
+                    <a href="#">
+                        <svg>
+                            <use xlink:href="#ic-home"></use>
+                        </svg>
+                        Home
+                    </a>
+                    <span>/</span>
+                    <a href="#">Blog</a>
+                </div>
+
+                <h1>Blog</h1>
+            </div>
+        </div>
+
+        <div class="container scontent">
+            <aside class="aside">               
+                <nav class="smenu">
+                    <h3>Categories</h3>
+                    <ul class="smenu__list">
+                        <li class="smenu__item">
+                            <a href="#" class="smenu__link smenu__link--active">All posts</a>
+                        </li>
+                        <li class="smenu__item">
+                            <a href="#" class="smenu__link">General</a>
+                        </li>
+                        <li class="smenu__item">
+                            <a href="#" class="smenu__link">Gift Card</a>
+                        </li>
+                        <li class="smenu__item">
+                            <a href="#" class="smenu__link">Gift Card Errors</a>
+                        </li>
+                        <li class="smenu__item">
+                            <a href="#" class="smenu__link">News & Updates</a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <nav class="smenu _links">
+                    <h3>Recent Posts</h3>
+                    <ul class="smenu__list">
+                        <li class="smenu__item">
+                            <a href="#" class="smenu__link">How to Redeem Nike Gift Cards for Bitcoin Online</a>
+                        </li>
+                        <li class="smenu__item">
+                            <a href="#" class="smenu__link">10 Gift Cards You Can Get At Costco</a>
+                        </li>
+                        <li class="smenu__item">
+                            <a href="#" class="smenu__link">How to Fix Walmart Gift Card Errors</a>
+                        </li>
+                        <li class="smenu__item">
+                            <a href="#" class="smenu__link">How to Fix PSN Gift Card Errors</a>
+                        </li>
+                        <li class="smenu__item">
+                            <a href="#" class="smenu__link">Update: Added Nintendo Gift Cards</a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <div class="bob">
+                    <a href="#" class="ps-link">&nbsp;</a>
+                    <img src="./assets/img/logo-dark.svg" class="bob__logo" alt="logo">
+                    <div class="bob__title">
+                        Sell with <br/><strong>Cytrongift</strong>
+                    </div>
+                    <ul class="bob__list">
+                        <li>
+                            <svg>
+                                <use xlink:href="#ic-star1"></use>
+                            </svg>
+                            <span>Best Rates on market</span>
+                        </li>
+                        <li>
+                            <svg>
+                                <use xlink:href="#ic-star1"></use>
+                            </svg>
+                            <span>More than 30 card types</span>
+                        </li>
+                        <li>
+                            <svg>
+                                <use xlink:href="#ic-star1"></use>
+                            </svg>
+                            <span>Completely confidential</span>
+                        </li>
+                    </ul>
+                    <a href="#" class="btn btn--blue _md">Sell Now</a>
+                </div>
+            </aside>
+
+            <div class="article">
+                <div class="blog-list">
+
+                    <div class="blog-col">
+                        <div class="blog-item">
+                            <div class="blog-item__img">
+                                <a href="#">
+                                    <img src="./assets/img/content/blog-1.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="blog-item__title">
+                                <a href="#">How to Fix Walmart Gift Card Errors</a>
+                            </div>
+                            <div class="blog-item__foot">
+                                <a href="#" class="blog-item__bx">Gift Card Errors</a>
+                                <span class="blog-item__date">March 25, 2024</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="blog-col">
+                        <div class="blog-item">
+                            <div class="blog-item__img">
+                                <a href="#">
+                                    <img src="./assets/img/content/blog-2.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="blog-item__title">
+                                <a href="#">Top 10 Free VPNs for Germany</a>
+                            </div>
+                            <div class="blog-item__foot">
+                                <a href="#" class="blog-item__bx">Gift Card Errors</a>
+                                <span class="blog-item__date">March 25, 2024</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="blog-col">
+                        <div class="blog-item">
+                            <div class="blog-item__img">
+                                <a href="#">
+                                    <img src="./assets/img/content/blog-3.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="blog-item__title">
+                                <a href="#">Why Cytrongift Is Better Than Cytrongift</a>
+                            </div>
+                            <div class="blog-item__foot">
+                                <a href="#" class="blog-item__bx">Gift Card Errors</a>
+                                <span class="blog-item__date">March 25, 2024</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="blog-col">
+                        <div class="blog-item">
+                            <div class="blog-item__img">
+                                <a href="#">
+                                    <img src="./assets/img/content/blog-4.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="blog-item__title">
+                                <a href="#">Hotbit Review: Reasons For Hotbit CEX Operations Shutdown </a>
+                            </div>
+                            <div class="blog-item__foot">
+                                <a href="#" class="blog-item__bx">Gift Card Errors</a>
+                                <span class="blog-item__date">March 25, 2024</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="blog-col">
+                        <div class="blog-item">
+                            <div class="blog-item__img">
+                                <a href="#">
+                                    <img src="./assets/img/content/blog-5.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="blog-item__title">
+                                <a href="#">How Web3 Resolves Critical Problems In Web2</a>
+                            </div>
+                            <div class="blog-item__foot">
+                                <a href="#" class="blog-item__bx">Gift Card Errors</a>
+                                <span class="blog-item__date">March 25, 2024</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="blog-col">
+                        <div class="blog-item">
+                            <div class="blog-item__img">
+                                <a href="#">
+                                    <img src="./assets/img/content/blog-6.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="blog-item__title">
+                                <a href="#">How to Sell Gift card safe with Cytrongift</a>
+                            </div>
+                            <div class="blog-item__foot">
+                                <a href="#" class="blog-item__bx">Gift Card Errors</a>
+                                <span class="blog-item__date">March 25, 2024</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="blog-col">
+                        <div class="blog-item">
+                            <div class="blog-item__img">
+                                <a href="#">
+                                    <img src="./assets/img/content/blog-7.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="blog-item__title">
+                                <a href="#">How to Redeem Nike Gift Cards for Bitcoin Online</a>
+                            </div>
+                            <div class="blog-item__foot">
+                                <a href="#" class="blog-item__bx">Gift Card Errors</a>
+                                <span class="blog-item__date">March 25, 2024</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="blog-col">
+                        <div class="blog-item">
+                            <div class="blog-item__img">
+                                <a href="#">
+                                    <img src="./assets/img/no-photo.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="blog-item__title">
+                                <a href="#">10 Gift Cards You Can Get At England</a>
+                            </div>
+                            <div class="blog-item__foot">
+                                <a href="#" class="blog-item__bx">Gift Card Errors</a>
+                                <span class="blog-item__date">March 25, 2024</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="blog-col">
+                        <div class="blog-item">
+                            <div class="blog-item__img">
+                                <a href="#">
+                                    <img src="./assets/img/content/blog-8.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="blog-item__title">
+                                <a href="#">Top 10 Gift Cards for 2023-2024</a>
+                            </div>
+                            <div class="blog-item__foot">
+                                <a href="#" class="blog-item__bx">Gift Card Errors</a>
+                                <span class="blog-item__date">March 25, 2024</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="pagination">
+					<a href="#" class="pagination__link pagination__link--arrow">
+						<svg>
+                            <use xlink:href="#ic-left"></use>
+                        </svg>
+					</a>
+					
+					<a href="#" class="pagination__link">1</a>
+					<a href="#" class="pagination__link pagination__link--active">2</a>
+					<a href="#" class="pagination__link">3</a>
+					<a href="#" class="pagination__link">4</a>
+                    <a href="#" class="pagination__link">5</a>
+					<a href="#" class="pagination__link pagination__link--dot">...</a>
+					<a href="#" class="pagination__link">348</a>
+					
+					<a href="#" class="pagination__link pagination__link--arrow">
+                        <svg>
+                            <use xlink:href="#ic-right"></use>
+                        </svg>
+					</a>
+				</div>
+            </div>
+
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__body container">
+
+            <div class="footer__top">
+                <div class="footer__info">
+                    <a href="#" class="footer__logo">
+                        <img src="./assets/img/logo-dark.svg" alt="logo">
+                    </a>
+                    <div class="footer__txt">
+                        Cytrongift is a platform focused on users that allows them to exchange their unused gift cards and vouchers for Bitcoin, Litecoin, Dogecoin, USDT, or fiat currencies like USD and EUR.
+                    </div>
+                </div>
+
+                <div class="footer__nav">
+                    <ul class="fmenu">
+                        <li class="h4 fmenu__cap">Use</li>
+                        <li class="fmenu__link">
+                            <a href="#">Sell Gift Card</a>
+                        </li>
+                        <li class="fmenu__link">
+                            <a href="#">Rates Calculator</a>
+                        </li>
+                        <li class="fmenu__link">
+                            <a href="#">My Account</a>
+                        </li>
+                    </ul>
+                    <ul class="fmenu">
+                        <li class="h4 fmenu__cap">Resources</li>
+                        <li class="fmenu__link">
+                            <a href="#">About us</a>
+                        </li>
+                        <li class="fmenu__link">
+                            <a href="#">Reviews</a>
+                        </li>
+                        <li class="fmenu__link">
+                            <a href="#">Blog & News</a>
+                        </li>
+                        <li class="fmenu__link">
+                            <a href="#">FAQ</a>
+                        </li>
+                        <li class="fmenu__link">
+                            <a href="#">Support</a>
+                        </li>
+                    </ul>
+                    <ul class="fmenu">
+                        <li class="h4 fmenu__cap">Legal</li>
+                        <li class="fmenu__link">
+                            <a href="#">Terms of Use</a>
+                        </li>
+                        <li class="fmenu__link">
+                            <a href="#">Privacy Policy</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer__langs">
+                    <div class="langs">
+                        <div class="langs__caption" data-dropdown="caption">
+                            <img src="./assets/img/flags/en.svg" alt="en">
+                            <span>English</span>
+                            <svg>
+                                <use xlink:href="#ic-sort"></use>
+                            </svg>
+                        </div>
+                        <div class="langs__list" data-dropdown="list">
+                            <a href="#" class="langs__item" data-dropdown="item">
+                                <img src="./assets/img/flags/ru.svg" alt="ru">
+                                <span>Русский</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer__cr">
+                <div class="copy-right">
+                    &copy; 2024 cytrongift.com<br/>Powered by <a href="https://perfecto-web.com/" target="_blank">Perfecto Web</a>
+                </div>
+
+                <ul class="fsocs">
+                    <li class="fsocs__item">
+                        <a href="#">
+                            <svg>
+                                <use xlink:href="#ic-soc-fb"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="fsocs__item">
+                        <a href="#">
+                            <svg>
+                                <use xlink:href="#ic-soc-tw"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="fsocs__item">
+                        <a href="#">
+                            <svg>
+                                <use xlink:href="#ic-soc-ig"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="fsocs__item">
+                        <a href="#">
+                            <svg>
+                                <use xlink:href="#ic-soc-yb"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </footer>
+</div>
+
+
+<!-- POPUPS BEGIN -->
+{{> popups_register }}
+<!-- POPUPS END -->

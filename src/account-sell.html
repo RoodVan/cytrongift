@@ -1,0 +1,482 @@
+---
+layout: default
+title: Account Sell
+---
+
+{{> ticker }}
+
+<div class="wrapper">
+    <header>    
+        <div class="header__top container">
+            <div class="header__logo _light">
+                <a href="#">
+                    <img src="./assets/img/logo-light.svg" alt="logo">
+                </a>
+            </div>
+
+            <div class="header__logo _dark">
+                <a href="#">
+                    <img src="./assets/img/logo-dark.svg" alt="logo">
+                </a>
+            </div>
+
+            <div class="menu-side">
+                <div class="menu-side__head">
+                    <div class="header__logo _light">
+                        <a href="#">
+                            <img src="./assets/img/logo-light.svg" alt="logo">
+                        </a>
+                    </div>
+                    <div class="header__logo _dark">
+                        <a href="#">
+                            <img src="./assets/img/logo-dark.svg" alt="logo">
+                        </a>
+                    </div>
+                    <button class="xclose js-menu-close">&nbsp;</button>
+                </div>
+
+                <nav class="menu">
+                    <ul class="menu__list">
+                        <li class="menu__item">
+                            <a href="#" class="menu__link menu__link--active">Home</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">About</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">Calculator</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">Blog</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">FAQ</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">Support</a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <div class="header__props">
+
+                    <div class="toggle-theme">
+                        <input type="checkbox" class="dn" id="t-theme"/>
+                        <label for="t-theme" class="toggle-theme__lab">
+                            <span class="toggle-theme__handler"></span>
+                        </label>
+                    </div>
+                    
+                    <div class="usbox">
+                        <div class="usbox__in">
+                            <a href="#" class="ps-link">&nbsp;</a>
+                            <img src="./assets/img/content/upic.jpg" class="usbox__img" alt="">
+                            <div class="usbox__info">
+                                <strong>My Account</strong>
+                                <span>Balance: 59.44$</span>
+                            </div>
+                            <span class="mobile-only usbox__arr">
+                                <svg>
+                                    <use xlink:href="#ic-right"></use>
+                                </svg>
+                            </span>
+                        </div>
+                        <a href="#" class="mobile-only btn btn--redline _md">Log out</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mobile-only">
+                <div class="toggle-theme">
+                    <input type="checkbox" id="t-theme-mobile"/>
+                    <label for="t-theme-mobile" class="toggle-theme__lab">
+                        <span class="toggle-theme__handler"></span>
+                    </label>
+                </div>
+
+                <div class="hamburger">
+                    <svg>
+                        <use xlink:href="#ic-hamburger"></use>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="t-heading t-heading--black">
+            <div class="t-heading__body container">
+                <div class="col-1">
+                    <div class="breadcrumbs">
+                        <a href="#">
+                            <svg>
+                                <use xlink:href="#ic-home"></use>
+                            </svg>
+                            Home
+                        </a>
+                        <span>/</span>
+                        <a href="#">Account</a>
+                    </div>
+
+                    <h1>Sell Gift Card</h1>
+                </div>
+
+                <div class="col-2">
+                    <div class="abalance">
+                        <div class="abalance__head">
+                            <div class="abalance__title">
+                                <svg>
+                                    <use xlink:href="#ic-money"></use>
+                                </svg>
+                                <span>Balance: </span>
+                            </div>
+                            
+                            <div class="abalance__summ">
+                                <strong>59.44</strong>
+                                <span>$</span>
+                            </div>
+                        </div>
+                        <button class="btn btn--blue" onclick="popup.open('#popup__withdrawal')">Withdrawal</button>
+                    </div> 
+                </div>
+            </div>
+        </div>
+
+        <div class="ac-container container">
+            <aside class="aside">               
+                <nav class="smenu">
+                    <h3>My Account</h3>
+                    <ul class="smenu__list">
+                        <li class="smenu__item">
+                            <a href="#" class="smenu__link smenu__link--active">
+                                <svg>
+                                    <use xlink:href="#ic-dashboard"></use>
+                                </svg>
+                                <span>Sell Gift Card</span>
+                            </a>
+                        </li>
+                        <li class="smenu__item">
+                            <a href="#" class="smenu__link">
+                                <svg>
+                                    <use xlink:href="#ic-transactions"></use>
+                                </svg>
+                                <span>Transactions</span>
+                            </a>
+                        </li>
+                        <li class="smenu__item">
+                            <a href="#" class="smenu__link">
+                                <svg>
+                                    <use xlink:href="#ic-money-pig"></use>
+                                </svg>
+                                <span>Referral</span>
+                            </a>
+                        </li>
+                        <li class="smenu__item">
+                            <a href="#" class="smenu__link">
+                                <svg>
+                                    <use xlink:href="#ic-settings"></use>
+                                </svg>
+                                <span>Settings</span>
+                            </a>
+                        </li>
+                        <li class="smenu__item">
+                            <a href="#" class="smenu__link">
+                                <svg>
+                                    <use xlink:href="#ic-logout"></use>
+                                </svg>
+                                <span>Logout</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <div class="ld-board">
+                    <h3>Leaderboard</h3>
+
+                    <div class="atimer-box">
+                        <div class="atimer" id="atimer">
+                            <div class="atimer__item">
+                                <span class="atimer__num" data-days>17</span>
+                                <span class="atimer__txt">days</span>
+                            </div>
+                            <div class="atimer__sep">:</div>
+                            <div class="atimer__item">
+                                <span class="atimer__num" data-hours>23</span>
+                                <span class="atimer__txt">hours</span>
+                            </div>
+                            <div class="atimer__sep">:</div>
+                            <div class="atimer__item">
+                                <span class="atimer__num" data-minutes>59</span>
+                                <span class="atimer__txt">min</span>
+                            </div>
+                            <div class="atimer__sep">:</div>
+                            <div class="atimer__item">
+                                <span class="atimer__num" data-seconds>59</span>
+                                <span class="atimer__txt">sec</span>
+                            </div>
+                        </div>
+
+                        <a href="#" class="gift-link">🎁 <span>Check this month gifts</span></a>
+                    </div>
+
+                    <ul class="ld-board__list">
+                        <li class="ld-board__item">
+                            <img src="./assets/img/content/upic1.jpg" alt="" class="ld-board__img">
+                            <span class="ld-board__name">Eld**s619</span>
+                            <span class="ld-board__rg">1</span>
+                        </li>
+                        <li class="ld-board__item">
+                            <img src="./assets/img/content/upic2.jpg" alt="" class="ld-board__img">
+                            <span class="ld-board__name">R**ns</span>
+                            <span class="ld-board__rg">2</span>
+                        </li>
+                        <li class="ld-board__item">
+                            <img src="./assets/img/content/u3.jpg" alt="" class="ld-board__img">
+                            <span class="ld-board__name">omor**ie63</span>
+                            <span class="ld-board__rg">3</span>
+                        </li>
+                        <li class="ld-board__item ld-board__item--you">
+                            <img src="./assets/img/content/upic.jpg" alt="" class="ld-board__img">
+                            <span class="ld-board__name">YOU</span>
+                            <span class="ld-board__rg">477</span>
+                        </li>
+                        <li class="ld-board__item">
+                            <img src="./assets/img/content/user.jpg" alt="" class="ld-board__img">
+                            <span class="ld-board__name">love**ee222</span>
+                            <span class="ld-board__rg">19813</span>
+                        </li>
+                    </ul>
+                </div>
+            </aside>
+
+            <div class="ac-content">
+                <h2>Sell <span class="fw400">Gift Card</span></h2>
+                <p>Sell local and international gift cards easily and instantly on Cytrongift. Kindly provide your gift card details.</p>
+
+                <div class="ac-row">
+                    <div class="acform">
+
+                        <div class="acform__2g">
+                            <div class="acform__g">
+                                <label class="acform__label">Card Type</label>
+                                <select class="js-sel-card">
+                                    <option value="forms" data-subtitle="Select this if you want to see all gift card forms, physical and ecode.">All Forms</option>
+                                    <option value="ecode" data-subtitle="The gift card is bought online and you have the code.">Ecode</option>
+                                    <option value="card" data-subtitle="The gift card is bought from a physical store and you have the image.">Physical Card</option>
+                                </select>
+                            </div>
+                            <div class="acform__g">
+                                <label class="acform__label">Country <span>(Optional)</span></label>
+                                <select class="js-sel-country">
+                                    <option value="1" data-logo="./assets/img/flags/en.svg">United Kingdom</option>
+                                    <option value="2" data-logo="./assets/img/flags/ru.svg">Russia</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="acform__2g">
+                            <div class="acform__g">
+                                <label class="acform__label">Category</label>
+                                <select class="js-sel-category">
+                                    <option value="apple" data-logo="./assets/img/tickers/apple.svg">Apple iTunes</option>
+                                    <option selected value="amazon" data-logo="./assets/img/tickers/amazon.svg">Amazon</option>
+                                    <option value="playstation" data-logo="./assets/img/tickers/playstation.svg">Playstation</option>
+                                    <option value="steam" data-logo="./assets/img/tickers/steam.svg">Steam</option>
+                                    <option value="xbox" data-logo="./assets/img/tickers/xbox.svg">Xbox</option>
+                                    <option value="adobe" data-logo="./assets/img/tickers/adobe.svg">Adobe</option>
+                                    <option value="googleplay" data-logo="./assets/img/tickers/googleplay.svg">Google Play</option>
+                                    <option value="visa" data-logo="./assets/img/tickers/visa.svg">Visa</option>
+                                </select>
+                            </div>
+                            <div class="acform__g">
+                                <label class="acform__label">Subcategory</label>
+                                <select class="js-sel-subcategory">
+                                    <option value="apple" data-logo="./assets/img/tickers/apple.svg">Apple iTunes 100$</option>
+                                    <option value="amazon" data-logo="./assets/img/tickers/amazon.svg">Amazon 50%</option>
+                                    <option value="playstation" data-logo="./assets/img/tickers/playstation.svg">Playstation 100%</option>
+                                    <option value="steam" data-logo="./assets/img/tickers/steam.svg">Steam 50$</option>
+                                    <option value="xbox" data-logo="./assets/img/tickers/xbox.svg">Xbox 70$</option>
+                                    <option value="adobe" data-logo="./assets/img/tickers/adobe.svg">Adobe 20$</option>
+                                    <option value="googleplay" data-logo="./assets/img/tickers/googleplay.svg">Google Play 50$</option>
+                                    <option value="visa" data-logo="./assets/img/tickers/visa.svg">Visa 10$</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="acform__g">
+                            <label class="acform__label"><span>Method 1:</span> Enter List of Cards</label>
+                            <textarea class="inp textarea textarea--ac" placeholder="Example: &#10;BVJ2-GGSK-BQLK-80A1&#10;PQOG-SSA2-GKAQ-9G0A"></textarea>
+                        </div>
+
+                        <div class="acform__g">
+                            <label class="acform__label"><span>Method 1:</span> Upload Card Image</label>
+                            <div class="dragdrop">
+                                <div class="dragdrop__trigger"></div>
+                                <input type="file" class="dragdrop__input" multiple>
+                                <svg>
+                                    <use xlink:href="#ic-image"></use>
+                                </svg>
+                                <strong>Upload file or drag and drop</strong>
+                                <span>You can upload multiple files up to 10MB</span>
+                            </div>
+                            <ul class="dragdrop__list"></ul>
+                        </div>
+                    </div>
+
+                    <div class="acbox">
+                        <div class="sellbx">
+                            <div class="sellbx__inp">
+                                <label class="sellbx__label">Quantity*</label>
+                                <input type="text" class="inp inp--dark _md" data-isnumber value="1">
+                            </div>
+                            <div class="sellbx__inp">
+                                <label class="sellbx__label">Comment <span>(Optional)</span></label>
+                                <textarea class="inp inp--dark textarea" placeholder="Any additional information for Cytrongift admin."></textarea>
+                            </div>
+                            <ul class="slinfo">
+                                <li class="slinfo__item">
+                                    <span class="slinfo__l">Quantity</span>
+                                    <span class="slinfo__d"></span>
+                                    <span class="slinfo__r">5</span>
+                                </li>
+                                <li class="slinfo__item">
+                                    <span class="slinfo__l">Rate</span>
+                                    <span class="slinfo__d"></span>
+                                    <span class="slinfo__r"><span>9.65</span> <b>USD</b></span>
+                                </li>
+                                <li class="slinfo__item _total">
+                                    <span class="slinfo__l">Total</span>
+                                    <span class="slinfo__d"></span>
+                                    <span class="slinfo__r"><span>48.25</span> <b>USD</b></span>
+                                </li>
+                            </ul>
+                            <div class="sellbx__btn">
+                                <button class="btn btn--green _md">Sell Cards</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__body container">
+
+            <div class="footer__top">
+                <div class="footer__info">
+                    <a href="#" class="footer__logo">
+                        <img src="./assets/img/logo-dark.svg" alt="logo">
+                    </a>
+                    <div class="footer__txt">
+                        Cytrongift is a platform focused on users that allows them to exchange their unused gift cards and vouchers for Bitcoin, Litecoin, Dogecoin, USDT, or fiat currencies like USD and EUR.
+                    </div>
+                </div>
+
+                <div class="footer__nav">
+                    <ul class="fmenu">
+                        <li class="h4 fmenu__cap">Use</li>
+                        <li class="fmenu__link">
+                            <a href="#">Sell Gift Card</a>
+                        </li>
+                        <li class="fmenu__link">
+                            <a href="#">Rates Calculator</a>
+                        </li>
+                        <li class="fmenu__link">
+                            <a href="#">My Account</a>
+                        </li>
+                    </ul>
+                    <ul class="fmenu">
+                        <li class="h4 fmenu__cap">Resources</li>
+                        <li class="fmenu__link">
+                            <a href="#">About us</a>
+                        </li>
+                        <li class="fmenu__link">
+                            <a href="#">Reviews</a>
+                        </li>
+                        <li class="fmenu__link">
+                            <a href="#">Blog & News</a>
+                        </li>
+                        <li class="fmenu__link">
+                            <a href="#">FAQ</a>
+                        </li>
+                        <li class="fmenu__link">
+                            <a href="#">Support</a>
+                        </li>
+                    </ul>
+                    <ul class="fmenu">
+                        <li class="h4 fmenu__cap">Legal</li>
+                        <li class="fmenu__link">
+                            <a href="#">Terms of Use</a>
+                        </li>
+                        <li class="fmenu__link">
+                            <a href="#">Privacy Policy</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer__langs">
+                    <div class="langs">
+                        <div class="langs__caption" data-dropdown="caption">
+                            <img src="./assets/img/flags/en.svg" alt="en">
+                            <span>English</span>
+                            <svg>
+                                <use xlink:href="#ic-sort"></use>
+                            </svg>
+                        </div>
+                        <div class="langs__list" data-dropdown="list">
+                            <a href="#" class="langs__item" data-dropdown="item">
+                                <img src="./assets/img/flags/ru.svg" alt="ru">
+                                <span>Русский</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer__cr">
+                <div class="copy-right">
+                    &copy; 2024 cytrongift.com<br/>Powered by <a href="https://perfecto-web.com/" target="_blank">Perfecto Web</a>
+                </div>
+
+                <ul class="fsocs">
+                    <li class="fsocs__item">
+                        <a href="#">
+                            <svg>
+                                <use xlink:href="#ic-soc-fb"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="fsocs__item">
+                        <a href="#">
+                            <svg>
+                                <use xlink:href="#ic-soc-tw"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="fsocs__item">
+                        <a href="#">
+                            <svg>
+                                <use xlink:href="#ic-soc-ig"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="fsocs__item">
+                        <a href="#">
+                            <svg>
+                                <use xlink:href="#ic-soc-yb"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </footer>
+</div>
+
+
+<!-- POPUPS BEGIN -->
+{{> popups_withdrawal }}
+<!-- POPUPS END -->

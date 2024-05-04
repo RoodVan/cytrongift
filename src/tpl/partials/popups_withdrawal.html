@@ -1,0 +1,81 @@
+<!-- Popup Withdrawal -->
+<div class="popup" id="popup__withdrawal">
+    <div class="popup__container popup__withdrawal">
+
+        <div class="popup__body">
+            <button type="button" class="btn popup__close" onclick="popup.close('#popup__withdrawal');">
+                <svg>
+                    <use xlink:href="#ic-close"></use>
+                </svg>
+            </button>
+
+            <div class="popup__head">
+                <div class="popup__icon">
+                    <svg>
+                        <use xlink:href="#ic-money"></use>
+                    </svg>
+                </div>
+                <div class="popup__title">Withdrawal</div>
+                <div class="popup__subtitle">Fill in the blanks, get your reward</div>
+            </div>
+
+            <div class="popup__form">
+                <div class="popup__form-g">
+                    <label class="popup__form-l">Select Balance</label>
+                    <select class="js-sel-balance">
+                        <option value="1">Affiliate Balance (25.89$)</option>
+                        <option value="2">Affiliate Balance (35.89$)</option>
+                        <option value="3">Affiliate Balance (45.89$)</option>
+                        <option value="3">Affiliate Balance (50.89$)</option>
+                    </select>
+                </div>
+                <div class="popup__form-g">
+                    <label class="popup__form-l">Payment Method</label>
+                    <select class="js-sel-paymethod">
+                        <option value="btc" data-logo="./assets/img/currency/btc.svg">Bitcoin (BTC)</option>
+                        <option value="ltc" data-logo="./assets/img/currency/ltc.svg">Litecoin (LTC)</option>
+                        <option value="usdt" data-logo="./assets/img/currency/btc.svg">USDT</option>
+                        <option value="doge" data-logo="./assets/img/currency/doge.svg">DOGE</option>
+                        <option value="usd" data-logo="./assets/img/currency/USD.svg">USD</option>
+                        <option value="eur" data-logo="./assets/img/currency/eur.svg">EUR</option>
+                    </select>
+                </div>
+                <div class="popup__form-g">
+                    <label class="popup__form-l">Bitcoin Wallet Address</label>
+                    <input type="text" class="inp inp--brd _md" placeholder="Wallet address">
+                </div>
+                <div class="popup__form-g text-right">
+                    <p>Amount: <strong>25.89$</strong></p>
+                    <p>You receive: <strong>0.000014 BTC</strong></p>
+                </div>
+
+                <div class="popup__form-btns">
+                    <button class="btn btn--green _md w-100" onclick="popup.close('#popup__withdrawal'); xconfirm('Withdrawal Request Submitted', 'Withdrawal expected to arrive within 24 hours. Thank you for using Cytrongift!');">Sign in</button>
+                    <div class="popup__fti">
+                        <a href="#"><span class="fw400">Transactions History</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+<!-- Popup details -->
+<div class="popup" id="popup__details">
+    <div class="popup__container popup__details">
+
+        <div class="popup__body">
+            <button type="button" class="btn popup__close" onclick="popup.close('#popup__details');">
+                <svg>
+                    <use xlink:href="#ic-close"></use>
+                </svg>
+            </button>
+
+            <div class="pdcontent"></div>
+
+        </div>
+
+    </div>
+</div>

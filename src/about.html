@@ -1,0 +1,327 @@
+---
+layout: default
+title: About Us
+---
+
+{{> ticker }}
+
+<div class="wrapper">
+    <header>    
+        <div class="header__top container">
+            <div class="header__logo _light">
+                <a href="#">
+                    <img src="./assets/img/logo-light.svg" alt="logo">
+                </a>
+            </div>
+
+            <div class="header__logo _dark">
+                <a href="#">
+                    <img src="./assets/img/logo-dark.svg" alt="logo">
+                </a>
+            </div>
+
+            <div class="menu-side">
+                <div class="menu-side__head">
+                    <div class="header__logo _light">
+                        <a href="#">
+                            <img src="./assets/img/logo-light.svg" alt="logo">
+                        </a>
+                    </div>
+                    <div class="header__logo _dark">
+                        <a href="#">
+                            <img src="./assets/img/logo-dark.svg" alt="logo">
+                        </a>
+                    </div>
+                    <button class="xclose js-menu-close">&nbsp;</button>
+                </div>
+
+                <nav class="menu">
+                    <ul class="menu__list">
+                        <li class="menu__item">
+                            <a href="#" class="menu__link menu__link--active">Home</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">About</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">Calculator</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">Blog</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">FAQ</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">Support</a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <div class="header__props">
+
+                    <div class="toggle-theme">
+                        <input type="checkbox" class="dn" id="t-theme"/>
+                        <label for="t-theme" class="toggle-theme__lab">
+                            <span class="toggle-theme__handler"></span>
+                        </label>
+                    </div>
+                    
+                    <div class="usbox">
+                        <div class="usbox__form">
+                            <button class="btn btn--ltblue _md" onclick="popup.open('#popup__login');">Log in</button>
+                            <button class="btn btn--blue _md" onclick="popup.open('#popup__sign-up');">Sign up</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mobile-only">
+                <div class="toggle-theme">
+                    <input type="checkbox" id="mdn"/>
+                    <label for="mdn" class="toggle-theme__lab">
+                        <span class="toggle-theme__handler"></span>
+                    </label>
+                </div>
+
+                <div class="hamburger">
+                    <svg>
+                        <use xlink:href="#ic-hamburger"></use>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-shadow">
+        <div class="container">
+            <div class="about-us">
+                <div class="about-head">
+                    <div class="about-head__bg">
+                        <img src="./assets/img/about-img.png" alt="">
+                    </div>
+                    <div class="about-head__info sttext">
+                        <h1>About us</h1>
+                        <p>At Cytrongift, we hold the conviction that everyone should have the opportunity to leverage, earn, and prosper from contemporary digital assets, motivating us to support those who need it the most. </p>
+                        <p>Virtually every enterprise requires high-caliber team members. The development of superior products and the satisfaction of customers are fundamental to generating value in businesses across various sectors. Cytrongift is on the same page; your role as a vital team member is indispensable to us. </p>
+                        <p>We offer attractive compensation packages at Cytrongift, including competitive salaries that meet industry standards, health insurance, flexible working hours, the choice between remote and on-site work arrangements, along with other distinctive perks.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="abt-cards">
+                <div class="abt-cards__col">
+                    <div class="abt-cards__item">
+                        <div class="abt-cards__icon">
+                            <svg>
+                                <use xlink:href="#ic-heart"></use>
+                            </svg>
+                        </div>
+                        <div class="abt-cards__title h2">Health<br/> Coverage</div>
+                        <div class="abt-cards__txt">
+                            Your health and safety are our top concern, which is why we offer extensive health insurance plans to keep you well and secure.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="abt-cards__col">
+                    <div class="abt-cards__item">
+                        <div class="abt-cards__icon">
+                            <svg>
+                                <use xlink:href="#ic-money-pig"></use>
+                            </svg>
+                        </div>
+                        <div class="abt-cards__title h2">Competitive<br/> Salary</div>
+                        <div class="abt-cards__txt">
+                            Join us and be rewarded with a competitive salary package that recognises your skills, contributions, and commitment.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="abt-cards__col">
+                    <div class="abt-cards__item">
+                        <div class="abt-cards__icon">
+                            <svg>
+                                <use xlink:href="#ic-rock"></use>
+                            </svg>
+                        </div>
+                        <div class="abt-cards__title h2">Attractive<br/> Compensation</div>
+                        <div class="abt-cards__txt">
+                            Become part of our team & receive a salary package that appreciates  your expertise ensuring you're competitively  compensated.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ofoot__body abt-bx">
+
+                <div class="ofoot__col">
+                    <h3 class="ofoot__title h1">Helping you<br/> earn on gift cards</h3>
+                    <p class="i">Release the value in their gift cards</p>
+                </div>
+
+                <div class="ofoot__col">
+                    <ul class="ofoot__ul">
+                        <li class="ofoot__li">
+                            <svg>
+                                <use xlink:href="#ic-card"></use>
+                            </svg>
+                            <span class="ofoot__inf">
+                                <strong class="h2">59</strong>
+                                <span>Card types</span>
+                            </span>
+                        </li>
+                        <li class="ofoot__li">
+                            <svg>
+                                <use xlink:href="#ic-users"></use>
+                            </svg>
+                            <span class="ofoot__inf">
+                                <strong class="h2">5,800</strong>
+                                <span>Members</span>
+                            </span>
+                        </li>
+                        <li class="ofoot__li">
+                            <svg>
+                                <use xlink:href="#ic-rocket"></use>
+                            </svg>
+                            <span class="ofoot__inf">
+                                <strong class="h2">3490</strong>
+                                <span>Cards sold</span>
+                            </span>
+                        </li>
+                        <li class="ofoot__li">
+                            <svg>
+                                <use xlink:href="#ic-money"></use>
+                            </svg>
+                            <span class="ofoot__inf">
+                                <strong class="h2">174,990 $</strong>
+                                <span>Earned</span>
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__body container">
+
+            <div class="footer__top">
+                <div class="footer__info">
+                    <a href="#" class="footer__logo">
+                        <img src="./assets/img/logo-dark.svg" alt="logo">
+                    </a>
+                    <div class="footer__txt">
+                        Cytrongift is a platform focused on users that allows them to exchange their unused gift cards and vouchers for Bitcoin, Litecoin, Dogecoin, USDT, or fiat currencies like USD and EUR.
+                    </div>
+                </div>
+
+                <div class="footer__nav">
+                    <ul class="fmenu">
+                        <li class="h4 fmenu__cap">Use</li>
+                        <li class="fmenu__link">
+                            <a href="#">Sell Gift Card</a>
+                        </li>
+                        <li class="fmenu__link">
+                            <a href="#">Rates Calculator</a>
+                        </li>
+                        <li class="fmenu__link">
+                            <a href="#">My Account</a>
+                        </li>
+                    </ul>
+                    <ul class="fmenu">
+                        <li class="h4 fmenu__cap">Resources</li>
+                        <li class="fmenu__link">
+                            <a href="#">About us</a>
+                        </li>
+                        <li class="fmenu__link">
+                            <a href="#">Reviews</a>
+                        </li>
+                        <li class="fmenu__link">
+                            <a href="#">Blog & News</a>
+                        </li>
+                        <li class="fmenu__link">
+                            <a href="#">FAQ</a>
+                        </li>
+                        <li class="fmenu__link">
+                            <a href="#">Support</a>
+                        </li>
+                    </ul>
+                    <ul class="fmenu">
+                        <li class="h4 fmenu__cap">Legal</li>
+                        <li class="fmenu__link">
+                            <a href="#">Terms of Use</a>
+                        </li>
+                        <li class="fmenu__link">
+                            <a href="#">Privacy Policy</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer__langs">
+                    <div class="langs">
+                        <div class="langs__caption" data-dropdown="caption">
+                            <img src="./assets/img/flags/en.svg" alt="en">
+                            <span>English</span>
+                            <svg>
+                                <use xlink:href="#ic-sort"></use>
+                            </svg>
+                        </div>
+                        <div class="langs__list" data-dropdown="list">
+                            <a href="#" class="langs__item" data-dropdown="item">
+                                <img src="./assets/img/flags/ru.svg" alt="ru">
+                                <span>Русский</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer__cr">
+                <div class="copy-right">
+                    &copy; 2024 cytrongift.com<br/>Powered by <a href="https://perfecto-web.com/" target="_blank">Perfecto Web</a>
+                </div>
+
+                <ul class="fsocs">
+                    <li class="fsocs__item">
+                        <a href="#">
+                            <svg>
+                                <use xlink:href="#ic-soc-fb"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="fsocs__item">
+                        <a href="#">
+                            <svg>
+                                <use xlink:href="#ic-soc-tw"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="fsocs__item">
+                        <a href="#">
+                            <svg>
+                                <use xlink:href="#ic-soc-ig"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="fsocs__item">
+                        <a href="#">
+                            <svg>
+                                <use xlink:href="#ic-soc-yb"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </footer>
+</div>
+
+
+<!-- POPUPS BEGIN -->
+{{> popups_register }}
+<!-- POPUPS END -->

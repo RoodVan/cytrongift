@@ -1,0 +1,273 @@
+---
+layout: default
+title: CitronGift
+---
+
+{{> ticker }}
+
+<div class="wrapper">
+    <header>    
+        <div class="header__top container">
+            <div class="header__logo _light">
+                <a href="#">
+                    <img src="./assets/img/logo-light.svg" alt="logo">
+                </a>
+            </div>
+
+            <div class="header__logo _dark">
+                <a href="#">
+                    <img src="./assets/img/logo-dark.svg" alt="logo">
+                </a>
+            </div>
+
+            <div class="menu-side">
+                <div class="menu-side__head">
+                    <div class="header__logo _light">
+                        <a href="#">
+                            <img src="./assets/img/logo-light.svg" alt="logo">
+                        </a>
+                    </div>
+                    <div class="header__logo _dark">
+                        <a href="#">
+                            <img src="./assets/img/logo-dark.svg" alt="logo">
+                        </a>
+                    </div>
+                    <button class="xclose js-menu-close">&nbsp;</button>
+                </div>
+
+                <nav class="menu">
+                    <ul class="menu__list">
+                        <li class="menu__item">
+                            <a href="#" class="menu__link menu__link--active">Home</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">About</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">Calculator</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">Blog</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">FAQ</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">Support</a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <div class="header__props">
+
+                    <div class="toggle-theme">
+                        <input type="checkbox" class="dn" id="t-theme"/>
+                        <label for="t-theme" class="toggle-theme__lab">
+                            <span class="toggle-theme__handler"></span>
+                        </label>
+                    </div>
+                    
+                    <div class="usbox">
+                        <div class="usbox__form">
+                            <button class="btn btn--ltblue _md" onclick="popup.open('#popup__login');">Log in</button>
+                            <button class="btn btn--blue _md" onclick="popup.open('#popup__sign-up');">Sign up</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mobile-only">
+                <div class="toggle-theme">
+                    <input type="checkbox" id="mdn"/>
+                    <label for="mdn" class="toggle-theme__lab">
+                        <span class="toggle-theme__handler"></span>
+                    </label>
+                </div>
+
+                <div class="hamburger">
+                    <svg>
+                        <use xlink:href="#ic-hamburger"></use>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="main--home">
+
+        <nav class="smenu" style="margin: 80px auto; text-align: center;">
+            <ul class="smenu__list">
+                <ul class="smenu__list">
+                    <li class="smenu__item">
+                        <a href="./index.html" target="_blank" class="smenu__link">index.html</a>
+                    </li>
+                    <li class="smenu__item">
+                        <a href="./about.html" target="_blank" class="smenu__link">about.html</a>
+                    </li>
+                    <li class="smenu__item">
+                        <a href="./account-referrals.html" target="_blank" class="smenu__link">account-referrals.html</a>
+                    </li>
+                    <li class="smenu__item">
+                        <a href="./account-sell.html" target="_blank" class="smenu__link">account-sell.html</a>
+                    </li>
+                    <li class="smenu__item">
+                        <a href="./account-settings.html" target="_blank" class="smenu__link">account-settings.html</a>
+                    </li>
+                    <li class="smenu__item">
+                        <a href="./account-transactions.html" target="_blank" class="smenu__link">account-transactions.html</a>
+                    </li>
+                    <li class="smenu__item">
+                        <a href="./blog.html" target="_blank" class="smenu__link">blog.html</a>
+                    </li>
+                    <li class="smenu__item">
+                        <a href="./blog-inner.html" target="_blank" class="smenu__link">blog-inner.html</a>
+                    </li>
+                    <li class="smenu__item">
+                        <a href="./faq.html" target="_blank" class="smenu__link">faq.html</a>
+                    </li>
+                    <li class="smenu__item">
+                        <a href="./privacy-policy.html" target="_blank" class="smenu__link">privacy-policy.html</a>
+                    </li>
+                    <li class="smenu__item">
+                        <a href="./terms-of-use.html" target="_blank" class="smenu__link">terms-of-use.html</a>
+                    </li>
+                    <li class="smenu__item">
+                        <a href="./support.html" target="_blank" class="smenu__link">support.html</a>
+                    </li>
+                    <li class="smenu__item">
+                        <a href="javascript:xconfirm('Alert: info', 'You are trying to withdraw your entire balance to the BTC network, are you sure?', 'info')" class="smenu__link">Alert:info</a>
+                    </li>
+                    <li class="smenu__item">
+                        <a href="javascript:xconfirm('Alert: error', 'Incorrect number of gift cards. A maximum of 10 cards can be sold at a time.', 'error')" class="smenu__link">Alert: error</a>
+                    </li>
+                    <li class="smenu__item">
+                        <a href="javascript:xconfirm('Alert: success', 'This page will be refreshed in 3 seconds.', 'success')" class="smenu__link">Alert: success</a>
+                    </li>
+                    <li class="smenu__item">
+                        <a href="javascript:xconfirm('Confirm: warning', 'Do you really want to cancel the gift card sale?', 'delete')" class="smenu__link">Confirm: warning</a>
+                    </li>
+                </ul>
+            </ul>
+        </nav>
+
+    </main>
+
+    <footer class="footer">
+        <div class="footer__body container">
+
+            <div class="footer__top">
+                <div class="footer__info">
+                    <a href="#" class="footer__logo">
+                        <img src="./assets/img/logo-dark.svg" alt="logo">
+                    </a>
+                    <div class="footer__txt">
+                        Cytrongift is a platform focused on users that allows them to exchange their unused gift cards and vouchers for Bitcoin, Litecoin, Dogecoin, USDT, or fiat currencies like USD and EUR.
+                    </div>
+                </div>
+
+                <div class="footer__nav">
+                    <ul class="fmenu">
+                        <li class="h4 fmenu__cap">Use</li>
+                        <li class="fmenu__link">
+                            <a href="#">Sell Gift Card</a>
+                        </li>
+                        <li class="fmenu__link">
+                            <a href="#">Rates Calculator</a>
+                        </li>
+                        <li class="fmenu__link">
+                            <a href="#">My Account</a>
+                        </li>
+                    </ul>
+                    <ul class="fmenu">
+                        <li class="h4 fmenu__cap">Resources</li>
+                        <li class="fmenu__link">
+                            <a href="#">About us</a>
+                        </li>
+                        <li class="fmenu__link">
+                            <a href="#">Reviews</a>
+                        </li>
+                        <li class="fmenu__link">
+                            <a href="#">Blog & News</a>
+                        </li>
+                        <li class="fmenu__link">
+                            <a href="#">FAQ</a>
+                        </li>
+                        <li class="fmenu__link">
+                            <a href="#">Support</a>
+                        </li>
+                    </ul>
+                    <ul class="fmenu">
+                        <li class="h4 fmenu__cap">Legal</li>
+                        <li class="fmenu__link">
+                            <a href="#">Terms of Use</a>
+                        </li>
+                        <li class="fmenu__link">
+                            <a href="#">Privacy Policy</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer__langs">
+                    <div class="langs">
+                        <div class="langs__caption" data-dropdown="caption">
+                            <img src="./assets/img/flags/en.svg" alt="en">
+                            <span>English</span>
+                            <svg>
+                                <use xlink:href="#ic-sort"></use>
+                            </svg>
+                        </div>
+                        <div class="langs__list" data-dropdown="list">
+                            <a href="#" class="langs__item" data-dropdown="item">
+                                <img src="./assets/img/flags/ru.svg" alt="ru">
+                                <span>Русский</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer__cr">
+                <div class="copy-right">
+                    &copy; 2024 cytrongift.com<br/>Powered by <a href="https://perfecto-web.com/" target="_blank">Perfecto Web</a>
+                </div>
+
+                <ul class="fsocs">
+                    <li class="fsocs__item">
+                        <a href="#">
+                            <svg>
+                                <use xlink:href="#ic-soc-fb"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="fsocs__item">
+                        <a href="#">
+                            <svg>
+                                <use xlink:href="#ic-soc-tw"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="fsocs__item">
+                        <a href="#">
+                            <svg>
+                                <use xlink:href="#ic-soc-ig"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="fsocs__item">
+                        <a href="#">
+                            <svg>
+                                <use xlink:href="#ic-soc-yb"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </footer>
+</div>
+
+
+<!-- POPUPS BEGIN -->
+{{> popups_register }}
+<!-- POPUPS END -->

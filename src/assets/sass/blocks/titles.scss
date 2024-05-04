@@ -1,0 +1,142 @@
+.title-0{
+    font-weight: 800;
+    font-size: 48px;
+    line-height: 120%;
+    @media only screen and (max-width: 1200px) {
+        font-size: 36px;
+    }
+    @media only screen and (max-width: 768px) {
+        font-size: 32px;
+    }
+}
+
+h1, h2, h3, h4, h5, .h1, .h2, .h3, .h4, .h5{
+    font-weight: 800;
+    line-height: 120%;
+}
+
+h1,.h1{
+    font-size: 36px;
+}
+
+h2,.h2{
+    font-size: 28px;
+}
+
+h3,.h3{
+    font-size: 20px;
+}
+
+h4,.h4{
+    font-size: 18px;
+}
+
+h5,.h5{
+    font-size: 16px;
+}
+
+.clr{
+    &-blue{
+        color: #3B82F6;
+    }
+    &-blue4{
+        color: #60A5FA;
+    }
+    &-green{
+        color: #22C55E;
+    }
+    &-green6{
+        color: #16A34A;
+    }
+    &-gray2{
+        color: #6C7A8B;
+    }
+    &-red{
+        color: #F56C6C;
+    }
+}
+
+.ps-link{
+    font-size: 0;
+    line-height: 0;
+    text-decoration: none;
+    position: absolute;
+    left: 0; right: 0;
+    top: 0; bottom: 0;
+    z-index: 2;
+}
+
+a{
+    color: #3B82F6;
+    text-decoration: underline;
+    &:hover{
+        text-decoration: none;
+    }
+}
+
+.w-100{
+    width: 100%;
+}
+
+.text{
+    &-left{
+        text-align: left;
+    }
+    &-right{
+        text-align: right;
+    }
+    &-center{
+        text-align: center;
+    }
+}
+
+.loading{
+    position: relative;
+    overflow: hidden;
+    user-select: none;
+    &:after{
+        content: "";
+        background: rgba(254, 254, 254, 0.9);
+        position: absolute;
+        left: 0; right: 0;
+        top: 0; bottom: 0;
+        z-index: 3;
+    }
+    &:before{
+        content: "";
+        width: 32px;
+        height: 32px;
+        position: absolute;
+        left: 0; right: 0;
+        top: 0; bottom: 0;
+        margin: auto;
+        z-index: 4;
+        background: url(../img/loader-dark.svg) no-repeat 0 0 / contain;
+    }
+
+}
+
+.main-shadow{
+    box-shadow: inset 0px -30px 120px rgba(36, 33, 78, 0.2);
+}
+
+.theme-dark{
+    .loading{
+        &:after{
+            background: rgba(18, 22, 32, 0.9);
+        }
+        &:before{
+            background: url(../img/loader-light.svg) no-repeat 0 0 / contain;
+        }
+    }
+}
+
+.mt{
+    &-30{
+        margin-top: 30px;
+    }
+}
+
+.fw400{
+    font-weight: 400;
+}

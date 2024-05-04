@@ -1,0 +1,251 @@
+/* Buttons styles */
+.btn{
+    display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 0;
+	text-align: center;
+
+    border-radius: 6px;
+    height: 36px;
+    padding: 0 16px;
+    font-size: 14px;
+    font-weight: 700;
+    color: #FEFEFE;
+
+	outline: none;
+	touch-action: manipulation;
+	cursor: pointer;
+	background-image: none;
+	border: none;
+	text-decoration: none !important;
+	white-space: nowrap;
+	user-select: none;
+    appearance: none;
+	transition: all ease-out .2s;
+    &:hover, &:focus, &:active{
+        outline: none;
+        text-decoration: none;
+    }
+    svg{
+        width: 18px;
+        height: 18px;
+        fill: #fff;
+        & + span{
+            margin-left: 10px;
+        }
+    }
+
+    span{
+        & + svg{
+            margin-left: 10px;
+        }
+    }
+
+    &--blue{
+        background: #3B82F6;
+        &._rs{
+            background: #60A5FA;
+            &:hover{
+                background: #3B82F6;
+            }
+        }
+        &:hover{
+            background: #60A5FA;
+        }
+        &:active{
+            background: #2563EB;
+        }
+        &:disabled, .disabled{
+            background: #262F3C;
+            color: #485566;
+            cursor: default;
+            svg{
+                fill: #485566;
+            }
+            &:hover, &:active{
+                background: #262F3C;
+                color: #485566;
+            }
+        }
+    }
+
+    &--green{
+        background: #22C55E;
+        &:hover{
+            background: #4ADE80;
+        }
+        &:active{
+            background: #16A34A;
+        }
+        &:disabled, .disabled{
+            background: #262F3C;
+            color: #485566;
+            cursor: default;
+            svg{
+                fill: #485566;
+            }
+            &:hover, &:active{
+                background: #262F3C;
+                color: #485566;
+            }
+        }
+    }
+
+    &--red{
+        background: #F56C6C;
+        &:hover{
+            background: darken($color: #F56C6C, $amount: 3);
+        }
+        &:active{
+            background: darken($color: #F56C6C, $amount: 5);
+        }
+        &:disabled, .disabled{
+            background: #262F3C;
+            color: #485566;
+            cursor: default;
+            svg{
+                fill: #485566;
+            }
+            &:hover, &:active{
+                background: #262F3C;
+                color: #485566;
+            }
+        }
+    }
+
+    &--ltblue{
+        background: transparent;
+        border: 1px solid transparent;
+        color: #3B82F6;
+        svg{
+            fill: #3B82F6;
+        }
+        &:hover{
+            border: 1px solid #3B82F6;
+        }
+        &:active{
+            border: 1px solid #3B82F6;
+            background: rgba(59, 130, 246, 0.05);
+        }
+        &:disabled, .disabled{
+            background: transparent;
+            color: #364152;
+            cursor: default;
+            svg{
+                fill: #364152;
+            }
+            &:hover, &:active{
+                border: 1px solid transparent;
+                background: transparent;
+                color: #364152;
+            }
+        }
+    }
+
+    &--redline{
+        background: transparent;
+        border: 1px solid #F56C6C;
+        color: #F56C6C;
+        svg{
+            fill: #F56C6C;
+        }
+        &:hover{
+            border: 1px solid #f74d4d;
+            color: #f74d4d;
+        }
+        &:active{
+            background: lighten(#f74d4d, 33)
+        }
+        &:disabled, .disabled{
+            background: transparent;
+            color: #364152;
+            cursor: default;
+            svg{
+                fill: #364152;
+            }
+            &:hover, &:active{
+                border: 1px solid transparent;
+                background: transparent;
+                color: #364152;
+            }
+        }
+    }
+
+    &--grayline{
+        background: transparent;
+        border: 1px solid #A2B4CB !important;
+        color: #181F2A;
+        svg{
+            fill: #181F2A;
+        }
+        &:hover{
+            border: 1px solid darken($color: #181F2A, $amount: 3) !important;
+            color: darken($color: #181F2A, $amount: 3);
+        }
+        &:active{
+            border: 1px solid darken($color: #181F2A, $amount: 5) !important;
+            color: darken($color: #181F2A, $amount: 5);
+        }
+        &:disabled, .disabled{
+            background: transparent;
+            color: #364152;
+            cursor: default;
+            svg{
+                fill: #364152;
+            }
+            &:hover, &:active{
+                border: 1px solid transparent;
+                background: transparent;
+                color: #364152;
+            }
+        }
+    }
+
+
+    &._md{
+        padding: 0 18px;
+        height: 48px;
+        font-size: 16px;
+    }
+    &._lg{
+        padding: 0 30px;
+        height: 56px;
+        font-size: 18px;
+    }
+}
+
+.xclose{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    outline: none;
+	touch-action: manipulation;
+	cursor: pointer;
+	background-image: none;
+    background: transparent;
+	border: none;
+    width: 40px;
+    height: 40px;
+    &:after, &:before{
+        position: absolute;
+        content: ' ';
+        height: 20px;
+        width: 2px;
+        border-radius: 4px;
+        background-color: #6C7A8B;
+    }
+    &:before {
+        transform: rotate(45deg);
+    }
+    &:after {
+        transform: rotate(-45deg);
+    }
+    &:hover{
+        outline: none;
+        &:after, &:before{
+            background-color: #F56C6C;
+        }
+    }
+}

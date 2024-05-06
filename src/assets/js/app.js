@@ -5,6 +5,7 @@
 //= components/confirm
 //= components/ticker
 //= components/imask
+//= components/simplelightbox
 
 
 /* Functions                                        
@@ -59,7 +60,7 @@ $(function () {
     // Ticker
     const mediaQuery = window.matchMedia('(max-width: 1024px)');
     if (mediaQuery.matches) {
-        $('.ticker__list').marquee();
+        $('.ticker__list').marquee({delay: 3000, speed: .6667, timing:0});
     } else {
         $('.ticker__list').marquee({ direction: 'horizontal', delay: 0, timing: 40 });
     }
@@ -222,8 +223,8 @@ $(function () {
             return;
         }
 
-        $(".question").find(".question__item").removeClass("question__item--open");
-        $(".question").find(".question__txt").hide("fast");
+        // $(".question").find(".question__item").removeClass("question__item--open");
+        // $(".question").find(".question__txt").hide("fast");
 
         item.find(".question__txt").slideToggle("fast", function () {
             item.addClass("question__item--open");

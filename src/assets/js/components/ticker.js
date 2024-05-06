@@ -134,12 +134,12 @@
           for(var i = 0; i <= this.next; i++){
                
                target -= this.isHorizontal()
-                  ? parseInt($(this.$items.get(this.next)).outerWidth())
-                  : parseInt($(this.$items.get(this.next)).outerHeight());
+                  ? parseFloat($(this.$items.get(this.next)).outerWidth())
+                  : parseFloat($(this.$items.get(this.next)).outerHeight());
                   
 
           }
-
+          
           this.intervalHandle = setInterval(function(){that.animate(target)},this.settings.timing);
       },
 

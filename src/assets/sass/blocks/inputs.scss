@@ -19,8 +19,10 @@
         box-shadow: 0px 10px 15px rgba(18, 22, 32, 0.1);
     }
 
-    &:read-only{
+    &:read-only, &:disabled{
         color: #A2B4CB;
+        box-shadow: none;
+        cursor:not-allowed;
     }
 
     &--brd{
@@ -85,7 +87,7 @@
     }
     &__label{
         font-size: 13px;
-        color: #6C7A8B;
+        color: #A2B4CB;
         line-height: 130%;
     }
     &__frame{
@@ -110,20 +112,33 @@
     }
     &:hover{
         .checkbox__frame{
-            border: 1px solid #181F2A;
+            //border: 1px solid #181F2A;
         }
     }
     &__inp{
         &:checked{
             & + .checkbox__frame{
                 position: relative;
-                background: #A2B4CB;
-                border: 1px solid #A2B4CB;
+                background: #3B82F6;
+                border: 1px solid #3B82F6;
                 animation: shrink-bounce 200ms cubic-bezier(.4,.0,.23,1);
                 &:before{
                     transform: scale(1);
+                    
                 }
             }
+            &:disabled{
+                & + .checkbox__frame{
+                    position: relative;
+                    background: #A2B4CB;
+                    border: 1px solid #A2B4CB;
+                    &:before{
+                        background: url(../img/checkbox-dark.svg?v=.1) no-repeat center center / 12px 11px;
+                        transform: scale(1);
+                    }
+                }
+            }
+
         }
     }
 }
@@ -160,20 +175,23 @@
             line-height: 130%;
         }
         &__frame{
-            &:before{
-                background: url(../img/checkbox-dark.svg) no-repeat center center / 12px 11px;
-            }
-        }
-        &:hover{
-            .checkbox__frame{
-                border: 1px solid #F2F4FB;
-            }
+            border: 1px solid #485566;
         }
         &__inp{
             &:checked{
+                &:disabled{
+                    & + .checkbox__frame{
+                        background: #262F3C;
+                        border: 1px solid #262F3C;
+                        &:before{
+                            background: url(../img/checkbox-dark-0.svg?v=.1) no-repeat center center / 12px 11px;
+                        }
+                    }
+                }
+            }
+            &:disabled{
                 & + .checkbox__frame{
-                    background: #3B82F6;
-                    border: 1px solid #3B82F6;
+                    border: 1px solid #262F3C;
                 }
             }
         }

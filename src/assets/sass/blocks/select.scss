@@ -132,9 +132,15 @@
     &--border{
         .exselect{
             &__btn{
-                border: 1px solid #A2B4CB;
+                border: 1px solid #D3DDE9;
+                transition: all .2s ease-in-out;
+                &:hover{
+                    border: 1px solid #A2B4CB;
+                }
             }
-            &__dropdown{
+        }
+        &.exselect--open{
+            .exselect__btn{
                 border: 1px solid #A2B4CB;
             }
         }

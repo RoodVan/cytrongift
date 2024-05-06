@@ -1,50 +1,3 @@
-$(function () {
-
-    const ticker = (target, margin = 0) => {
-
-        let $target = $(target),
-            $inner = $target.children(),
-            containerWidth = 0,
-            left = 0,
-            width = 0;
-      
-        const size = () => {
-      
-          containerWidth = $target.width();
-          left = containerWidth;
-      
-          $target.find('.ticker__item').each(function() {
-      
-            width = width + $(this).outerWidth() + margin;
-      
-          });
-      
-        };
-        size();
-      
-        let tick = () => {
-      
-          if (--left < -width) {
-      
-            left = containerWidth;
-      
-          }
-      
-          $inner.css({
-            'transform': 'translateX(' + left + 'px)'
-          });
-      
-          setTimeout(tick, 16);
-      
-        };
-      
-        tick();
-      
-      };
-      //ticker('#js-ticker', 30);
-
-});
-
 // Rating stars render
 function renderStars(count = 1) {
     const maxCount = 5;
@@ -156,7 +109,7 @@ function exampleLoading(selector) {
         for (let i = 0;  i < imagesForUpload.length; i++) {
             let imageTmpUrl = URL.createObjectURL(imagesForUpload[i]);
             html += `<li class="dragdrop__item" data-id="${i}">
-                    <img src="${imageTmpUrl}" alt="">
+                    <a href="${imageTmpUrl}"><img src="${imageTmpUrl}" alt=""></a>
                     <span class="dragdrop__del">
                         <svg>
                             <use xlink:href="#ic-remove"></use>
@@ -168,6 +121,8 @@ function exampleLoading(selector) {
         imagesList.innerHTML = html;
         let delLinks = imagesList.querySelectorAll('.dragdrop__del');
 
+        let lightbox = new SimpleLightbox({elements: '.dragdrop__list a'});
+
         for(let key = 0; key < delLinks.length; key++) {
             delLinks[key].addEventListener('click', (e) => {
                 e.preventDefault();
@@ -175,6 +130,8 @@ function exampleLoading(selector) {
                 let id = li.dataset.id;
                 li.remove();
                 imagesForUpload.splice(id, 1);
+                lightbox.destroy();
+                lightbox = new SimpleLightbox({elements: '.dragdrop__list a'});
             });
         }
 
@@ -224,7 +181,7 @@ function exampleLoading(selector) {
                 imagesForUpload.push(files[i]);
             }
             imageListRender(files);
-            dragAndDrop.classList.remove('dragdrop--active');
+            dragAndDrop.classList.remove('dragdrop--active');            
         });
 
     }

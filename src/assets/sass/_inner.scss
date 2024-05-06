@@ -73,7 +73,8 @@
 }
 
 .sstext{
-    font-size: 16px;
+    font-size: 17px;
+    line-height: 28px;
     p + p{
         margin-top: 18px;
     }
@@ -131,6 +132,22 @@
     .pagination{
         margin-top: 0;
         margin-left: 30px;
+    }
+    .question{
+        &__item{
+            &:last-child{
+                border-bottom: none;
+            }
+        }
+    }
+    .article__bk{
+        margin-top: 40px;
+    }
+    &._faq{
+        .question{
+            padding-bottom: 0;
+            margin-top: 30px;
+        }
     }
     @media only screen and (max-width: 1200px) {
         &.pl30{
@@ -631,7 +648,7 @@ article.article{
         background: #F2F4FB;
         transition: all .2s ease-in-out;
         &:hover{
-            color: #A2B4CB;
+            color: #3B82F6;
         }
         &--arrow{
             svg{
@@ -642,7 +659,7 @@ article.article{
             }
             &:hover{
                 svg{
-                    fill: #A2B4CB;
+                    fill: #3B82F6;
                 }
             }
         }
@@ -650,6 +667,10 @@ article.article{
             background: #3B82F6;
             color: #F2F4FB;
             box-shadow: 0px 10px 15px rgba(146, 160, 208, 0.3);
+            &:hover{
+                color: #F2F4FB;
+                cursor: default;
+            }
         }
     }
     @media only screen and (max-width: 680px){
@@ -1327,6 +1348,9 @@ article.article{
             .slinfo__r{
                 color: #4ADE80;
             }
+            .slinfo__d{
+                margin-bottom: 9px;
+            }
         }
     }
     &__d{
@@ -1335,7 +1359,7 @@ article.article{
         border-bottom: 1px dotted #A2B4CB;
         margin-left: 3px;
         margin-right: 3px;
-        margin-bottom: 5px;
+        margin-bottom: 6px;
     }
     &__r{
         b{

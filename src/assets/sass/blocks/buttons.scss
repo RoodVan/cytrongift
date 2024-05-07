@@ -143,6 +143,38 @@
         }
     }
 
+    &--blueline{
+        background: transparent;
+        border: 1px solid #3B82F6;
+        color: #3B82F6;
+        svg{
+            fill: #3B82F6;
+        }
+        &:hover{
+            border: 1px solid #60A5FA;
+            color: #60A5FA;
+        }
+        &:active{
+            border: 1px solid #2563EB;
+            color: #2563EB;
+        }
+        &:disabled, .disabled{
+            border: 1px solid #364152;
+            background: transparent;
+            color: #364152;
+            cursor: default;
+            svg{
+                fill: #364152;
+            }
+            &:hover, &:active{
+                border: 1px solid #364152;
+                background: transparent;
+                color: #364152;
+            }
+        }
+    }
+
+
     &--redline{
         background: transparent;
         border: 1px solid #F56C6C;

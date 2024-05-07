@@ -15,7 +15,7 @@
     <meta name="keywords" content="">
     <meta name="description" content="">
     
-    <title>Account Referrals</title>
+    <title>Partners</title>
 </head>
 <body>
 
@@ -207,28 +207,18 @@
                     </div>
                     
                     <div class="usbox">
-                        <div class="usbox__in">
-                            <a href="#" class="ps-link">&nbsp;</a>
-                            <img src="./assets/img/content/upic.jpg" class="usbox__img" alt="">
-                            <div class="usbox__info">
-                                <strong>My Account</strong>
-                                <span>Balance: 59.44$</span>
-                            </div>
-                            <span class="mobile-only usbox__arr">
-                                <svg>
-                                    <use xlink:href="#ic-right"></use>
-                                </svg>
-                            </span>
+                        <div class="usbox__form">
+                            <button class="btn btn--ltblue _md" onclick="popup.open('#popup__login');">Log in</button>
+                            <button class="btn btn--blue _md" onclick="popup.open('#popup__sign-up');">Sign up</button>
                         </div>
-                        <a href="#" class="mobile-only btn btn--redline _md">Log out</a>
                     </div>
                 </div>
             </div>
             
             <div class="mobile-only">
                 <div class="toggle-theme">
-                    <input type="checkbox" id="t-theme-mobile"/>
-                    <label for="t-theme-mobile" class="toggle-theme__lab">
+                    <input type="checkbox" id="mdn"/>
+                    <label for="mdn" class="toggle-theme__lab">
                         <span class="toggle-theme__handler"></span>
                     </label>
                 </div>
@@ -242,371 +232,247 @@
         </div>
     </header>
 
-    <main>
-        <div class="t-heading t-heading--black">
-            <div class="t-heading__body container">
-                <div class="col-1">
-                    <div class="breadcrumbs">
-                        <a href="#">
-                            <svg>
-                                <use xlink:href="#ic-home"></use>
-                            </svg>
-                            Home
-                        </a>
-                        <span>/</span>
-                        <a href="#">Account</a>
-                    </div>
+    <main class="main--home">
+        <section class="ptns-head">
+            <div class="ptns-head__body container">
+                <h1 class="ptns-head__title">Partners</h1>
+            </div>
+        </section>
+        <!-- ./ptns-head -->
 
-                    <h1>Referrals</h1>
+        <section class="ptns-info">
+            <div class="ptns-info__body container">
+                <div class="ptns-info__l">
+                    <strong>For over 2 years now</strong>, we've been growing and evolving, helping millions of people profitably <strong class="bgtxt bgtxt--down"><span>sell gift cards</span></strong>.
                 </div>
+                <ul class="ptns-info__r">
+                    <li>
+                        <strong>740</strong>
+                        <span>Sells in 7 days</span>
+                    </li>
+                    <li>
+                        <strong>55,590 <b class="fw400">$</b></strong>
+                        <span>Sells in 7 days</span>
+                    </li>
+                </ul>
+            </div>
 
-                <div class="col-2">
-                    <div class="abalance">
-                        <div class="abalance__head">
-                            <div class="abalance__title">
+        </section>
+        <!-- ptns-info -->
+
+        <section class="wword">
+            <div class="wword__body container">
+                <div class="wword__num">3 001 860</div>
+                <div class="wword__txt">All time users earn (usd)</div>
+            </div>
+        </section>
+        <!-- ./wword -->
+
+        <section class="ourms">
+            <div class="ourms__info">
+                <h1 class="ourms__title"><span class="bgtxt"><span>Our mission</span></span> is to enable people to make a profit in just a few clicks.</h1>
+                <p class="ourms__txt">Through technology, we help people and partners by simplifying the gift card solution, from one-offs to bulk shipments.</p>
+                <a href="#" class="btn btn--blue _md">Become a Partner</a>
+            </div>
+        </section>
+        <!-- ./ ourms -->
+
+        <section class="ptns-abt">
+            <div class="container ptns-abt__body">
+                <div class="abt-cards">
+                    <div class="abt-cards__col">
+                        <div class="abt-cards__item">
+                            <div class="abt-cards__icon">
+                                <svg>
+                                    <use xlink:href="#ic-users"></use>
+                                </svg>
+                            </div>
+                            <div class="abt-cards__title h2">273 <span>/partners</span></div>
+                            <div class="abt-cards__txt">
+                                The number of registered users who attracted to the project through the referral system.
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="abt-cards__col">
+                        <div class="abt-cards__item">
+                            <div class="abt-cards__icon">
                                 <svg>
                                     <use xlink:href="#ic-money"></use>
                                 </svg>
-                                <span>Balance: </span>
                             </div>
-                            
-                            <div class="abalance__summ">
-                                <strong>59.44</strong>
-                                <span>$</span>
+                            <div class="abt-cards__title h2">5,900 <span>/$</span></div>
+                            <div class="abt-cards__txt">
+                                Earned by partners for the last 7 days on the referral system.
                             </div>
                         </div>
-                        <button class="btn btn--blue" onclick="popup.open('#popup__withdrawal')">Withdrawal</button>
-                    </div> 
-                </div>
-            </div>
-        </div>
-
-        <div class="ac-container container">
-            <aside class="aside">               
-                <nav class="smenu">
-                    <h3>My Account</h3>
-                    <ul class="smenu__list">
-                        <li class="smenu__item">
-                            <a href="#" class="smenu__link">
-                                <svg>
-                                    <use xlink:href="#ic-dashboard"></use>
-                                </svg>
-                                <span>Sell Gift Card</span>
-                            </a>
-                        </li>
-                        <li class="smenu__item">
-                            <a href="#" class="smenu__link">
-                                <svg>
-                                    <use xlink:href="#ic-transactions"></use>
-                                </svg>
-                                <span>Transactions</span>
-                            </a>
-                        </li>
-                        <li class="smenu__item">
-                            <a href="#" class="smenu__link smenu__link--active">
+                    </div>
+    
+                    <div class="abt-cards__col">
+                        <div class="abt-cards__item">
+                            <div class="abt-cards__icon">
                                 <svg>
                                     <use xlink:href="#ic-money-pig"></use>
                                 </svg>
-                                <span>Referral</span>
-                            </a>
-                        </li>
-                        <li class="smenu__item">
-                            <a href="#" class="smenu__link">
-                                <svg>
-                                    <use xlink:href="#ic-settings"></use>
-                                </svg>
-                                <span>Settings</span>
-                            </a>
-                        </li>
-                        <li class="smenu__item">
-                            <a href="#" class="smenu__link">
-                                <svg>
-                                    <use xlink:href="#ic-logout"></use>
-                                </svg>
-                                <span>Logout</span>
-                            </a>
-                        </li>
-                    </ul>
-                </nav>
-
-                <div class="ld-board">
-                    <h3>Leaderboard</h3>
-
-                    <div class="atimer-box">
-                        <div class="atimer" id="atimer">
-                            <div class="atimer__item">
-                                <span class="atimer__num" data-days>17</span>
-                                <span class="atimer__txt">days</span>
                             </div>
-                            <div class="atimer__sep">:</div>
-                            <div class="atimer__item">
-                                <span class="atimer__num" data-hours>23</span>
-                                <span class="atimer__txt">hours</span>
-                            </div>
-                            <div class="atimer__sep">:</div>
-                            <div class="atimer__item">
-                                <span class="atimer__num" data-minutes>59</span>
-                                <span class="atimer__txt">min</span>
-                            </div>
-                            <div class="atimer__sep">:</div>
-                            <div class="atimer__item">
-                                <span class="atimer__num" data-seconds>59</span>
-                                <span class="atimer__txt">sec</span>
-                            </div>
-                        </div>
-
-                        <a href="#" class="gift-link">🎁 <span>Check this month gifts</span></a>
-                    </div>
-
-                    <ul class="ld-board__list">
-                        <li class="ld-board__item">
-                            <img src="./assets/img/content/upic1.jpg" alt="" class="ld-board__img">
-                            <span class="ld-board__name">Eld**s619</span>
-                            <span class="ld-board__rg">1</span>
-                        </li>
-                        <li class="ld-board__item">
-                            <img src="./assets/img/content/upic2.jpg" alt="" class="ld-board__img">
-                            <span class="ld-board__name">R**ns</span>
-                            <span class="ld-board__rg">2</span>
-                        </li>
-                        <li class="ld-board__item">
-                            <img src="./assets/img/content/u3.jpg" alt="" class="ld-board__img">
-                            <span class="ld-board__name">omor**ie63</span>
-                            <span class="ld-board__rg">3</span>
-                        </li>
-                        <li class="ld-board__item ld-board__item--you">
-                            <img src="./assets/img/content/upic.jpg" alt="" class="ld-board__img">
-                            <span class="ld-board__name">YOU</span>
-                            <span class="ld-board__rg">477</span>
-                        </li>
-                        <li class="ld-board__item">
-                            <img src="./assets/img/content/user.jpg" alt="" class="ld-board__img">
-                            <span class="ld-board__name">love**ee222</span>
-                            <span class="ld-board__rg">19813</span>
-                        </li>
-                    </ul>
-                </div>
-            </aside>
-
-            <div class="ac-content">
-
-                <div class="rfbox">
-                    <div class="rfbox__head">
-                        <svg>
-                            <use xlink:href="#ic-money-pig"></use>
-                        </svg>
-                        <span>Referral balance</span>
-                    </div>
-                    <div class="rfbox__body">
-                        <div class="rfbox__inp">
-                            <input type="text" id="refinp" readonly value="https://cytrongift.com/?r=339120" class="inp _lg">
-                            <span class="rfbox__copy" data-copy="#refinp">
-                                <svg>
-                                    <use xlink:href="#ic-copy"></use>
-                                </svg>
-                            </span>
-                        </div>
-                        <div class="rfbox__sum">
-                            <strong>7.23</strong>
-                            <span>USD</span>
-                        </div>
-                    </div>
-                    <div class="rfbox__ft">
-                        Earn referral bonus when your friends sign up with your referral code and trade successfully.
-                    </div>
-                </div>
-
-                <div class="ac-caption">
-                    <div class="ac-caption__title">My <span>Referrals</span></div>
-                    <div class="ac-caption__subtitle">List of my invited users</div>
-                </div>
-
-                <div class="rflist">
-                    <div class="rflist__col">
-                        <div class="rflist__item">
-                            <img src="./assets/img/content/upic1.jpg" class="rflist__img" alt="">
-                            <div class="rflist__info">
-                                <div class="rflist__prop"><span>ID: 23781</span><b>•</b><span>17 May 2024, 21:22</span></div>
-                                <div class="rflist__name">AnnyB990</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="rflist__col">
-                        <div class="rflist__item">
-                            <img src="./assets/img/content/user.jpg" class="rflist__img" alt="">
-                            <div class="rflist__info">
-                                <div class="rflist__prop"><span>ID: 23781</span><b>•</b><span>17 May 2024, 21:22</span></div>
-                                <div class="rflist__name">AnnyB990</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="rflist__col">
-                        <div class="rflist__item">
-                            <img src="./assets/img/content/upic2.jpg" class="rflist__img" alt="">
-                            <div class="rflist__info">
-                                <div class="rflist__prop"><span>ID: 23781</span><b>•</b><span>17 May 2024, 21:22</span></div>
-                                <div class="rflist__name">AnnyB990</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="rflist__col">
-                        <div class="rflist__item">
-                            <img src="./assets/img/content/u1.jpg" class="rflist__img" alt="">
-                            <div class="rflist__info">
-                                <div class="rflist__prop"><span>ID: 23781</span><b>•</b><span>17 May 2024, 21:22</span></div>
-                                <div class="rflist__name">AnnyB990</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="rflist__col">
-                        <div class="rflist__item">
-                            <img src="./assets/img/content/u2.jpg" class="rflist__img" alt="">
-                            <div class="rflist__info">
-                                <div class="rflist__prop"><span>ID: 23781</span><b>•</b><span>17 May 2024, 21:22</span></div>
-                                <div class="rflist__name">AnnyB990</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="rflist__col">
-                        <div class="rflist__item">
-                            <img src="./assets/img/content/u3.jpg" class="rflist__img" alt="">
-                            <div class="rflist__info">
-                                <div class="rflist__prop"><span>ID: 23781</span><b>•</b><span>17 May 2024, 21:22</span></div>
-                                <div class="rflist__name">AnnyB990</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="rflist__col">
-                        <div class="rflist__item">
-                            <img src="./assets/img/content/upic1.jpg" class="rflist__img" alt="">
-                            <div class="rflist__info">
-                                <div class="rflist__prop"><span>ID: 23781</span><b>•</b><span>17 May 2024, 21:22</span></div>
-                                <div class="rflist__name">AnnyB990</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="rflist__col">
-                        <div class="rflist__item">
-                            <img src="./assets/img/content/upic2.jpg" class="rflist__img" alt="">
-                            <div class="rflist__info">
-                                <div class="rflist__prop"><span>ID: 23781</span><b>•</b><span>17 May 2024, 21:22</span></div>
-                                <div class="rflist__name">AnnyB990</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="rflist__col">
-                        <div class="rflist__item">
-                            <img src="./assets/img/content/user.jpg" class="rflist__img" alt="">
-                            <div class="rflist__info">
-                                <div class="rflist__prop"><span>ID: 23781</span><b>•</b><span>17 May 2024, 21:22</span></div>
-                                <div class="rflist__name">AnnyB990</div>
+                            <div class="abt-cards__title h2">27,331 <span>/$</span></div>
+                            <div class="abt-cards__txt">
+                                Earned by the partners for the whole time of the project's existence.
                             </div>
                         </div>
                     </div>
                 </div>
-
-                <div class="pagination">
-					<a href="#" class="pagination__link pagination__link--arrow">
-						<svg>
-                            <use xlink:href="#ic-left"></use>
-                        </svg>
-					</a>
-					
-					<a href="#" class="pagination__link">1</a>
-					<a href="#" class="pagination__link pagination__link--active">2</a>
-					<a href="#" class="pagination__link">3</a>
-					<a href="#" class="pagination__link">4</a>
-                    <a href="#" class="pagination__link">5</a>
-					<a href="#" class="pagination__link pagination__link--dot">...</a>
-					<a href="#" class="pagination__link">348</a>
-					
-					<a href="#" class="pagination__link pagination__link--arrow">
-                        <svg>
-                            <use xlink:href="#ic-right"></use>
-                        </svg>
-					</a>
-				</div>
-
-                <div class="ac-caption">
-                    <div class="ac-caption__title">Transactions</div>
-                    <div class="ac-caption__subtitle">List of your earn</div>
-                </div>
-
-                <div class="atable-box">
-                    <table class="atable atable--1">
-                        <thead>
-                            <tr>
-                                <th>ID</th>
-                                <th>User</th>
-                                <th>Reward</th>
-                                <th>Time</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td class="atable__id" data-title="ID">23781</td>
-                                <td class="atable__user" data-title="User">AnnyB990</td>
-                                <td class="atable__reward" data-title="Reward"><strong class="clr-green">+0.39$</strong></td>
-                                <td class="atable__time" data-title="Time">17 May 2024, 21:22</td>
-                            </tr>
-                            <tr>
-                                <td class="atable__id" data-title="ID">23781</td>
-                                <td class="atable__user" data-title="User">AnnyB990</td>
-                                <td class="atable__reward" data-title="Reward"><strong class="clr-green">+0.39$</strong></td>
-                                <td class="atable__time" data-title="Time">17 May 2024, 21:22</td>
-                            </tr>
-                            <tr>
-                                <td class="atable__id" data-title="ID">23781</td>
-                                <td class="atable__user" data-title="User">AnnyB990</td>
-                                <td class="atable__reward" data-title="Reward"><strong class="clr-green">+0.39$</strong></td>
-                                <td class="atable__time" data-title="Time">17 May 2024, 21:22</td>
-                            </tr>
-                            <tr>
-                                <td class="atable__id" data-title="ID">23781</td>
-                                <td class="atable__user" data-title="User">AnnyB990</td>
-                                <td class="atable__reward" data-title="Reward"><strong class="clr-green">+0.39$</strong></td>
-                                <td class="atable__time" data-title="Time">17 May 2024, 21:22</td>
-                            </tr>
-                            <tr>
-                                <td class="atable__id" data-title="ID">23781</td>
-                                <td class="atable__user" data-title="User">AnnyB990</td>
-                                <td class="atable__reward" data-title="Reward"><strong class="clr-green">+0.39$</strong></td>
-                                <td class="atable__time" data-title="Time">17 May 2024, 21:22</td>
-                            </tr>
-                            <tr>
-                                <td class="atable__id" data-title="ID">23781</td>
-                                <td class="atable__user" data-title="User">AnnyB990</td>
-                                <td class="atable__reward" data-title="Reward"><strong class="clr-green">+0.39$</strong></td>
-                                <td class="atable__time" data-title="Time">17 May 2024, 21:22</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    <div class="pagination">
-                        <a href="#" class="pagination__link pagination__link--arrow">
-                            <svg>
-                                <use xlink:href="#ic-left"></use>
-                            </svg>
-                        </a>
-                        
-                        <a href="#" class="pagination__link">1</a>
-                        <a href="#" class="pagination__link pagination__link--active">2</a>
-                        <a href="#" class="pagination__link">3</a>
-                        <a href="#" class="pagination__link">4</a>
-                        <a href="#" class="pagination__link">5</a>
-                        <a href="#" class="pagination__link pagination__link--dot">...</a>
-                        <a href="#" class="pagination__link">348</a>
-                        
-                        <a href="#" class="pagination__link pagination__link--arrow">
-                            <svg>
-                                <use xlink:href="#ic-right"></use>
-                            </svg>
-                        </a>
-                    </div>
-                </div>
-
             </div>
+        </section>
 
-        </div>
+        <section class="rwb">
+            <div class="rwb__body container">
+                <h1 class="rwb__title">What They're <span class="clr-blue">Saying</span></h1>
+                <div class="advant__txt">Take a peek behind the curtain and discover the chorus of voices from  our vibrant community. From tales of triumph to lessons learned, here’s  what our customers are really thinking and feeling about their journey  with us.</div>
+                
+                <div class="rwb__list">
+                    <div class="rwb__carousel">
+                        <div class="rwb-slide">
+
+                            <div class="rwb-slide__item">
+                                <div class="rwb-slide__head">
+                                    <div class="rwb-slide__name">
+                                        <img src="./assets/img/content/upic2.jpg" alt="user">
+                                        <span>Elly Green</span>
+                                    </div>
+                                    <div class="rwb-slide__rg">
+                                        <span>4.9</span>
+                                        <svg>
+                                            <use xlink:href="#ic-star1"></use>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="rwb-slide__body">
+                                    This app is an epitome of excellence. Their service is great and very fast. I traded my gift card and it was approved in few minutes. Withdrawals are also super fast. 
+                                </div>
+                                <div class="rwb-slide__foot">
+                                    2024, May 11<span class="d">•</span>Trustpilot
+                                </div>
+                            </div>
+
+                            <div class="rwb-slide__item">
+                                <div class="rwb-slide__head">
+                                    <div class="rwb-slide__name">
+                                        <img src="./assets/img/content/upic1.jpg" alt="Moses Esho">
+                                        <span>Moses Esho</span>
+                                    </div>
+                                    <div class="rwb-slide__rg">
+                                        <span>4.9</span>
+                                        <svg>
+                                            <use xlink:href="#ic-star1"></use>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="rwb-slide__body">
+                                    I was afraid of being disappointed at first because I'm a first-time user but I had to just give it a trial and wow I was amazed by how wonderful they put a smile on my face. It is easy, friendly and trustworthy, user but I ha...
+                                </div>
+                                <div class="rwb-slide__foot">
+                                    2024, May 11<span class="d">•</span>Local review
+                                </div>
+                            </div>
+
+                            <div class="rwb-slide__item">
+                                <div class="rwb-slide__head">
+                                    <div class="rwb-slide__name">
+                                        <img src="./assets/img/content/upic2.jpg" alt="user">
+                                        <span>Elly Green</span>
+                                    </div>
+                                    <div class="rwb-slide__rg">
+                                        <span>4.9</span>
+                                        <svg>
+                                            <use xlink:href="#ic-star1"></use>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="rwb-slide__body">
+                                    This app is an epitome of excellence. Their service is great and very fast. I traded my gift card and it was approved in few minutes. Withdrawals are also super fast. 
+                                </div>
+                                <div class="rwb-slide__foot">
+                                    2024, May 11<span class="d">•</span>Trustpilot
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- ./ rwb-slide -->
+
+                    <div class="rwbx">
+                        <div class="rwbx__main">
+                            <div class="rwbx__stars">
+                                <div class="rwbx__sum">4.94</div>
+                                <div class="rwstars js-stars" data-val="5"></div>
+                            </div>
+                            <ul class="rwbx__list">
+                               <li class="rwbx__item">
+                                    <span class="nm">5</span>
+                                    <span class="ps">
+                                        <b style="width: 84%;"></b>
+                                    </span>
+                                    <span class="pt">84%</span>
+                               </li>
+                                <li class="rwbx__item">
+                                    <span class="nm">4</span>
+                                    <span class="ps">
+                                        <b style="width: 5%;"></b>
+                                    </span>
+                                    <span class="pt">5%</span>
+                                </li>
+                                <li class="rwbx__item">
+                                    <span class="nm">3</span>
+                                    <span class="ps">
+                                        <b style="width: 3%;"></b>
+                                    </span>
+                                    <span class="pt">3%</span>
+                                </li>
+                                <li class="rwbx__item">
+                                    <span class="nm">2</span>
+                                    <span class="ps">
+                                        <b style="width: 7%;"></b>
+                                    </span>
+                                    <span class="pt">7%</span>
+                                </li>
+                                <li class="rwbx__item">
+                                    <span class="nm">1</span>
+                                    <span class="ps">
+                                        <b style="width: 1%;"></b>
+                                    </span>
+                                    <span class="pt">1%</span>
+                                </li>                                
+                            </ul>
+                        </div>
+
+                        <div class="rwbx__btns">
+                            <a href="#" class="btn btn--blue _md">Write Review</a>
+                            <a href="#" class="btn btn--ltblue _md">All reviews</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="rwb__dots"></div>
+            </div>
+        </section>
+        <!-- ./ rwb -->
+
+        <section class="rdybox">
+            <div class="container rdybox__body">
+                <h1 class="rdybox__title">Are You Ready?</h1>
+                <div class="rdybox__txt">Do you want to become a major supplier of cards? <br/>Contact us, we will provide flexible terms and organize fruitful cooperation for many years.</div>
+                <div class="rdybox__btns">
+                    <a href="#" class="btn btn--blue _md">For wholesale</a>
+                    <a href="#" class="btn btn--blueline _md">For Individuals</a>
+                </div>
+                <div class="rdybox__or">OR</div>
+                <div class="rdybox__link">
+                    <a href="#">partners@cytrongift.com</a>
+                </div>
+            </div>
+        </section>
+        <!-- ./rdybox -->
     </main>
 
     <footer class="footer">
@@ -729,12 +595,13 @@
 
 
 <!-- POPUPS BEGIN -->
-<!-- Popup Withdrawal -->
-<div class="popup" id="popup__withdrawal">
-    <div class="popup__container popup__withdrawal">
+
+<!-- Popup Sign Up -->
+<div class="popup" id="popup__sign-up">
+    <div class="popup__container popup__sign-up">
 
         <div class="popup__body">
-            <button type="button" class="btn popup__close" onclick="popup.close('#popup__withdrawal');">
+            <button type="button" class="btn popup__close" onclick="popup.close('#popup__sign-up');">
                 <svg>
                     <use xlink:href="#ic-close"></use>
                 </svg>
@@ -743,47 +610,43 @@
             <div class="popup__head">
                 <div class="popup__icon">
                     <svg>
-                        <use xlink:href="#ic-money"></use>
+                        <use xlink:href="#ic-rock"></use>
                     </svg>
                 </div>
-                <div class="popup__title">Withdrawal</div>
-                <div class="popup__subtitle">Fill in the blanks, get your reward</div>
+                <div class="popup__title">Sign up</div>
+                <div class="popup__subtitle">Create your account for free</div>
             </div>
 
             <div class="popup__form">
                 <div class="popup__form-g">
-                    <label class="popup__form-l">Select Balance</label>
-                    <select class="js-sel-balance">
-                        <option value="1">Affiliate Balance (25.89$)</option>
-                        <option value="2">Affiliate Balance (35.89$)</option>
-                        <option value="3">Affiliate Balance (45.89$)</option>
-                        <option value="3">Affiliate Balance (50.89$)</option>
-                    </select>
+                    <label class="popup__form-l">Username*</label>
+                    <input type="text" class="inp inp--brd _md" placeholder="Enter your name">
                 </div>
                 <div class="popup__form-g">
-                    <label class="popup__form-l">Payment Method</label>
-                    <select class="js-sel-paymethod">
-                        <option value="btc" data-logo="./assets/img/currency/btc.svg">Bitcoin (BTC)</option>
-                        <option value="ltc" data-logo="./assets/img/currency/ltc.svg">Litecoin (LTC)</option>
-                        <option value="usdt" data-logo="./assets/img/currency/btc.svg">USDT</option>
-                        <option value="doge" data-logo="./assets/img/currency/doge.svg">DOGE</option>
-                        <option value="usd" data-logo="./assets/img/currency/usd.svg">USD</option>
-                        <option value="eur" data-logo="./assets/img/currency/eur.svg">EUR</option>
-                    </select>
+                    <label class="popup__form-l">Email*</label>
+                    <input type="email" class="inp inp--brd _md" placeholder="Enter your email">
                 </div>
                 <div class="popup__form-g">
-                    <label class="popup__form-l">Bitcoin Wallet Address</label>
-                    <input type="text" class="inp inp--brd _md" placeholder="Wallet address">
+                    <label class="popup__form-l">Password*</label>
+                    <div class="pp-e">
+                        <span class="sw-eye">
+                            <svg><use xlink:href="#ic-eye-0"></use></svg>
+                        </span>
+                        <input type="password" class="inp inp--brd _md" placeholder="Set up your password">
+                    </div>
                 </div>
-                <div class="popup__form-g text-right">
-                    <p>Amount: <strong>25.89$</strong></p>
-                    <p>You receive: <strong>0.000014 BTC</strong></p>
+                <div class="popup__form-g">
+                    <label class="checkbox">
+                        <input type="checkbox" class="checkbox__inp">
+                        <span class="checkbox__frame"></span>
+                        <span class="checkbox__label">I’ve read and agree to the Cytrongift Terms of Use and Privacy Policy</span>
+                    </label>
                 </div>
 
                 <div class="popup__form-btns">
-                    <button class="btn btn--green _md w-100" onclick="popup.close('#popup__withdrawal'); xconfirm('Withdrawal Request Submitted', 'Withdrawal expected to arrive within 24 hours. Thank you for using Cytrongift!');">Sign in</button>
+                    <button class="btn btn--green _md w-100" onclick="exampleLoading('.popup__sign-up');">Create Account</button>
                     <div class="popup__fti">
-                        <a href="#"><span class="fw400">Transactions History</span></a>
+                        Already registered? <a href="javascript:popup.open('#popup__login');">Log In</a>
                     </div>
                 </div>
             </div>
@@ -792,20 +655,83 @@
     </div>
 </div>
 
-
-<!-- Popup details -->
-<div class="popup" id="popup__details">
-    <div class="popup__container popup__details">
+<!-- Popup Log In -->
+<div class="popup" id="popup__login">
+    <div class="popup__container popup__login">
 
         <div class="popup__body">
-            <button type="button" class="btn popup__close" onclick="popup.close('#popup__details');">
+            <button type="button" class="btn popup__close" onclick="popup.close('#popup__login');">
                 <svg>
                     <use xlink:href="#ic-close"></use>
                 </svg>
             </button>
 
-            <div class="pdcontent"></div>
+            <div class="popup__head">
+                <div class="popup__icon">
+                    <svg>
+                        <use xlink:href="#ic-user"></use>
+                    </svg>
+                </div>
+                <div class="popup__title">Log in</div>
+                <div class="popup__subtitle">Please enter your details.</div>
+            </div>
 
+            <div class="popup__form">
+                <div class="popup__form-g">
+                    <label class="popup__form-l">Email</label>
+                    <input type="email" class="inp inp--brd _md" placeholder="Enter your email">
+                </div>
+                <div class="popup__form-g">
+                    <label class="popup__form-l">Password</label>
+                    <input type="password" class="inp inp--brd _md" placeholder="Enter your password">
+                </div>
+                <div class="popup__form-g text-right">
+                    <a href="javascript:popup.open('#popup__forgot');">Forgot password?</a>
+                </div>
+
+                <div class="popup__form-btns">
+                    <button class="btn btn--blue _md w-100" onclick="exampleLoading('.popup__login');">Sign in</button>
+                    <div class="popup__fti">
+                        New on Cytrongift? <a href="javascript:popup.open('#popup__sign-up');">Sign Up</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!-- Popup Forgot Password -->
+<div class="popup" id="popup__forgot">
+    <div class="popup__container popup__forgot">
+
+        <div class="popup__body">
+            <button type="button" class="btn popup__close" onclick="popup.close('#popup__forgot');">
+                <svg>
+                    <use xlink:href="#ic-close"></use>
+                </svg>
+            </button>
+
+            <div class="popup__head">
+                <div class="popup__icon">
+                    <svg>
+                        <use xlink:href="#ic-locked"></use>
+                    </svg>
+                </div>
+                <div class="popup__title">Forgot Password?</div>
+                <div class="popup__subtitle">Enter your email & follow the instructions.</div>
+            </div>
+
+            <div class="popup__form">
+                <div class="popup__form-g">
+                    <label class="popup__form-l">Email</label>
+                    <input type="email" class="inp inp--brd _md" placeholder="Enter your email">
+                </div>
+
+                <div class="popup__form-btns">
+                    <button class="btn btn--blue _md w-100" onclick="exampleLoading('.popup__forgot');">Send instructions</button>
+                </div>
+            </div>
         </div>
 
     </div>

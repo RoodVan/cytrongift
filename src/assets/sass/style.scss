@@ -642,6 +642,13 @@ main{
         bottom: 12px;
         height: 1em;
     }
+
+    &--down{
+        &:after{
+            bottom: auto;
+            top: 20px;
+        }
+    }
     
 }
 

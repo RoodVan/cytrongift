@@ -17,6 +17,7 @@
 	touch-action: manipulation;
 	cursor: pointer;
 	background-image: none;
+    background: none;
 	border: none;
 	text-decoration: none !important;
 	white-space: nowrap;
@@ -173,7 +174,6 @@
             }
         }
     }
-
 
     &--redline{
         background: transparent;

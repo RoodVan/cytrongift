@@ -652,6 +652,23 @@ function renderStars(count = 1) {
     this.append(html)
 }
 
+function renderStarsAction(count = 1) {
+    const maxCount = 5;
+    const starOn = "r_on";
+    const starOff = "r_off";
+    let html = "";
+
+    for (let i = 1; i <= maxCount; i++) {
+        html += i <= count ? `<span class="${starOn}"><svg class="ic-star1"><use xlink:href="#ic-star1"></use></svg></span>`
+            : `<span class="${starOff}"><svg class="ic-star1"><use xlink:href="#ic-star1"></use></svg></span>`;
+    }
+
+    this.find("span").remove();
+    this.find("input").val(count);
+    $(".pprat__rat > span").html(`${count}.0`);
+    this.append(html)
+}
+
 // Correct_layout
 function correct_layout(str, rev) {
     var replacer = {
@@ -1312,6 +1329,19 @@ function copyText(input,text,flag=false) {
 	// Alert the copied text
 	xconfirm(`${text} 👍`, '', 'info');
   }
+
+
+
+// Send Review
+function sendReview(){
+    $('.popup__reviews').addClass("loading");
+
+    setTimeout(function(){
+        $('.popup__reviews').removeClass("loading");
+        popup.close('#popup__reviews'); 
+        xconfirm('Thank You for Your Review', 'Reviews like yours really support local florists by helping people discover us.');
+    }, 2000)
+}
 // Dropdown
 class Dropdown {
     constructor(selector, cb){
@@ -1772,14 +1802,14 @@ $(function () {
     });
 
     // Ratings action
-    $(".rating__action input").each(function () {
+    $(".js-rating input").each(function () {
         let val = $(this).val();
-        const $wrap = $(this).parent(".rating__action");
+        const $wrap = $(this).parent(".js-rating");
 
-        renderStars.call($wrap, val);
+        renderStarsAction.call($wrap, val);
 
-        $wrap.on("click", "i", function () {
-            renderStars.call($wrap, $(this).index());
+        $wrap.on("click", "span", function () {
+            renderStarsAction.call($wrap, $(this).index());
         });
     });
 

@@ -83,6 +83,13 @@
     &__subtitle{
         text-align: center;
         color: var(--gray-2_1);
+
+        ._gl{
+            color: var(--gray-2_1);
+            &:hover{
+                text-decoration: none;
+            }
+        }
     }
 
     &__qrc{
@@ -135,6 +142,11 @@
         }
         &-btns{
             margin-top: 20px;
+        }
+        .textarea{
+            font-size: 14px;
+            height: 120px;
+            line-height: 20px;
         }
 
     }
@@ -288,6 +300,10 @@
                 }
             }
         }
+    }
+
+    &__reviews{
+        max-width: 560px;
     }
  
     @media only screen and (max-width: 400px) {
@@ -492,6 +508,52 @@
     }
 }
 
+.pprat{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &__right{
+        line-height: 20px;
+    }
+    &__rat{
+        font-size: 14px;
+        color: #6C7A8B;
+    }
+    @media only screen and (max-width: 430px) {
+        &__right{
+            display: none;
+        }
+    }
+}
+
+.rating{
+    display: flex;
+    margin-bottom: 14px;
+    span{
+        width: 40px;
+        height: 40px;
+        flex: 0 0 40px;
+        max-width: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 5px;
+        border-radius: 8px;
+        cursor: pointer;
+        svg{
+            width: 20px;
+            height: 20px;
+            fill: #FEFEFE;
+        }
+        &.r_on{
+            background: #4ADE80;
+        }
+        &.r_off{
+            background: #D4DDE9;
+        }
+    }
+}
+
 .theme-dark{
     .popups-overlay{
         background: rgba(18, 22, 32, 0.7);
@@ -531,6 +593,14 @@
         }
     }
 
+    .rating{
+        span{
+            svg{
+                fill:#485566;
+            }
+        }
+    }
+
    .popup{
         &__container{
             background: #121620;
@@ -544,6 +614,9 @@
         }
         &__subtitle{
             color: #485566;
+            ._gl{
+                color: #485566;
+            }
         }
         &__close{
             svg{

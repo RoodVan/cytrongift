@@ -163,14 +163,14 @@ $(function () {
     });
 
     // Ratings action
-    $(".rating__action input").each(function () {
+    $(".js-rating input").each(function () {
         let val = $(this).val();
-        const $wrap = $(this).parent(".rating__action");
+        const $wrap = $(this).parent(".js-rating");
 
-        renderStars.call($wrap, val);
+        renderStarsAction.call($wrap, val);
 
-        $wrap.on("click", "i", function () {
-            renderStars.call($wrap, $(this).index());
+        $wrap.on("click", "span", function () {
+            renderStarsAction.call($wrap, $(this).index());
         });
     });
 

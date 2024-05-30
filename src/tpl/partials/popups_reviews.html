@@ -1,0 +1,57 @@
+
+<!-- Popup Sign Up -->
+<div class="popup" id="popup__reviews">
+    <div class="popup__container popup__reviews">
+
+        <div class="popup__body">
+            <button type="button" class="btn popup__close" onclick="popup.close('#popup__reviews');">
+                <svg>
+                    <use xlink:href="#ic-close"></use>
+                </svg>
+            </button>
+
+            <div class="popup__head">
+                <div class="popup__icon">
+                    <svg>
+                        <use xlink:href="#ic-star0"></use>
+                    </svg>
+                </div>
+                <div class="popup__title">Write Review</div>
+                <div class="popup__subtitle">By submitting this review, you confirm it’s <a class="_gl" href="#">based on a genuine experience</a> and you haven’t received an incentive to write it.</div>
+            </div>
+
+            <div class="pprat">
+                <div class="pprat__left">
+                    <label class="popup__form-l">Rate your recent experience</label>
+                    <div class="rating js-rating">
+                        <input type="hidden" value="4">
+                    </div>
+                </div>
+                <div class="pprat__right">
+                    <label class="popup__form-l">Good service</label>
+                    <div class="pprat__rat">You appreciated: <span>4.0</span></div>
+                </div>
+            </div>
+
+            <div class="popup__form">
+                <div class="popup__form-g">
+                    <label class="popup__form-l">Your Email</label>
+                    <input type="email" class="inp inp--brd _md" placeholder="Enter your email">
+                </div>
+                <div class="popup__form-g">
+                    <label class="popup__form-l">Your Name</label>
+                    <input type="text" class="inp inp--brd _md" placeholder="Example: John Doe">
+                </div>
+                <div class="popup__form-g">
+                    <label class="popup__form-l">Tell us more about your experience</label>
+                    <textarea class="inp inp--brd textarea" placeholder="What made your experience great? What is this company doing well?&#10; Remember to be honest, helpful, and constructive!"></textarea>
+                </div>
+
+                <div class="popup__form-btns">
+                    <button class="btn btn--green _md w-100" onclick="sendReview();">Submit Review</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>

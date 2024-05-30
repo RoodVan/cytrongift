@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;400;500;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/style.min.css?v=.9">
+    <link rel="stylesheet" href="assets/css/style.min.css?v=.99">
     
     <!-- Useful meta tags -->
     <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -236,6 +236,11 @@
         <div class="hdrw">
             <div class="hdrw__body container">
 
+                <div class="hdrw__props">
+                    <strong>274</strong>
+                    <span><b>Clients</b> Reviews</span>
+                </div>
+
                 <div class="hdrw__info">
                     <div class="hat__title">
                         <h1 class="title-0">Sell Smarter <br/>With <span class="bgtxt"><span>Real Revie</span></span>ws</h1>
@@ -245,7 +250,7 @@
                     </div>
                     <div class="hat__btns hdrw__btns">
                         <button class="btn btn--blue _lg" onclick="popup.open('#popup__reviews');">Write Review</button>
-                        <a href="#" class="btn _lg _lt">Read reviews</a>
+                        <button class="btn _lg _lt" onclick="goTo('.pgrw',30);">Read reviews</button>
                     </div>
                 </div>
 
@@ -776,7 +781,7 @@
     </div>
 </div>
 
-<!-- Popup Sign Up -->
+<!-- Popup Reviews -->
 <div class="popup" id="popup__reviews">
     <div class="popup__container popup__reviews">
 

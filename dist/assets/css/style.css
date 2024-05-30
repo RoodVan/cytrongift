@@ -4642,6 +4642,8 @@ body[class*=jconfirm-no-scroll-] {
     -ms-flex-direction: column;
     flex-direction: column;
     height: 100%;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
 }
 
 header {
@@ -9953,6 +9955,7 @@ article.article__bk {
 }
 
 .hdrw__body {
+    position: relative;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -9997,6 +10000,35 @@ article.article__bk {
     transform: rotate(54deg);
 }
 
+.hdrw__props {
+    position: absolute;
+    width: 215px;
+    height: 74px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    bottom: 137px;
+    right: 378px;
+    padding-left: 15px;
+}
+
+.hdrw__props strong {
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.hdrw__props span {
+    margin-left: 19px;
+    font-size: 17px;
+}
+
+.hdrw__props span b {
+    font-weight: 700;
+}
+
 @media only screen and (max-width: 1300px) {
     .hdrw__body {
         background: url(../img/bg-rws--white.png) no-repeat right bottom/560px auto;
@@ -10007,6 +10039,22 @@ article.article__bk {
         -ms-flex: 0 0 580px;
         flex: 0 0 580px;
         max-width: 580px;
+    }
+
+    .hdrw__props {
+        height: 62px;
+        bottom: 122px;
+        right: 313px;
+        padding-left: 17px;
+    }
+
+    .hdrw__props strong {
+        font-size: 20px;
+    }
+
+    .hdrw__props span {
+        font-size: 15px;
+        margin-left: 17px;
     }
 }
 
@@ -10030,6 +10078,10 @@ article.article__bk {
         background: none;
     }
 
+    .hdrw__props {
+        display: none;
+    }
+
     .hdrw__info {
         -webkit-box-flex: 0;
         -ms-flex: 0 0 100%;
@@ -10047,7 +10099,7 @@ article.article__bk {
 }
 
 .pgrw__item {
-    padding-bottom: 30px;
+    padding-bottom: 35px;
     -webkit-column-break-inside: avoid;
     -moz-column-break-inside: avoid;
     break-inside: avoid;
@@ -10091,6 +10143,10 @@ article.article__bk {
 
 .theme-dark .hdrw ._lt {
     color: #FFFFFF;
+}
+
+.theme-dark .hdrw__props strong {
+    color: #60A5FA;
 }
 
 @media only screen and (max-width: 1300px) {

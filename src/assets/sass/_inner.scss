@@ -2369,6 +2369,7 @@ article.article{
     height: 580px;
 
     &__body{
+        position: relative;
         display: flex;
         align-items: center;
         height: 100%;
@@ -2401,6 +2402,28 @@ article.article{
         }
     }
 
+    &__props{
+        position: absolute;
+        width: 215px;
+        height: 74px;
+        display: flex;
+        align-items: center;
+        bottom: 137px;
+        right: 378px;
+        padding-left: 15px;
+        strong{
+            font-size: 22px;
+            font-weight: 700;
+        }
+        span{
+            margin-left: 19px;
+            font-size: 17px;
+            b{
+                font-weight: 700;
+            }
+        }
+    }
+
     @media only screen and (max-width: 1300px) {
         &__body{
             background: url(../img/bg-rws--white.png) no-repeat right bottom / 560px auto;
@@ -2408,6 +2431,19 @@ article.article{
         &__info{
             flex: 0 0 580px;
             max-width: 580px;
+        }
+        &__props{
+            height: 62px;
+            bottom: 122px;
+            right: 313px;
+            padding-left: 17px;
+            strong{
+                font-size: 20px;
+            }
+            span{
+                font-size: 15px;
+                margin-left: 17px;
+            }
         }
     }
 
@@ -2425,6 +2461,9 @@ article.article{
         &__body{
             background: none;
         }
+        &__props{
+            display: none;
+        }
         &__info{
             flex: 0 0 100%;
             max-width: 100%;
@@ -2441,7 +2480,7 @@ article.article{
 .pgrw{
     padding-top: 50px;
     &__item{
-        padding-bottom: 30px;
+        padding-bottom: 35px;
         break-inside: avoid;
     }
     &__list{
@@ -2472,6 +2511,11 @@ article.article{
         }
         ._lt{
             color: #FFFFFF;
+        }
+        &__props{
+            strong{
+                color: #60A5FA;
+            }
         }
         @media only screen and (max-width: 1300px) {
             &__body{
